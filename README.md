@@ -28,13 +28,13 @@ To be updated
 
 ### Basic usage
 To be updated
-![image1](./image1.png)
+![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/image1.png)
 
 ### Tutorial 
 To be updated
 
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. May you be FREE!   
-![image2](./image2.png)
+![image2](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/aboutus.png)
 
 ## To be updated
