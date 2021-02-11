@@ -28,7 +28,7 @@ To be updated
 
 ### Basic usage
 To be updated
-![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage1.png)
+![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)
 
 ### Tutorial 
 To be updated
