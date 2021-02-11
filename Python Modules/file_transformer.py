@@ -8,7 +8,7 @@ import re
 import pandas as pd
 import json
 import requests
-import py mysql
+import pymysql
 from datetime import date, timedelta
 
 
