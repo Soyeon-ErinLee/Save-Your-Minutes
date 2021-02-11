@@ -24,15 +24,17 @@ We deliver our service by a user-freindly website. You simply access it via the 
 
 ## How to use
 ### Requirements
+To be updated
 
 ### Basic usage
+To be updated
 ![image1](./image1.png)
 
 ### Tutorial 
-
+To be updated
 
 ## About us, *Dobby-AI*
-![image2](./image2.png)
+
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. May you be FREE!
 
 ## To be updated
