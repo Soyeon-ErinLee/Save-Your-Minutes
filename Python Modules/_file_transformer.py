@@ -9,7 +9,7 @@ import json
 import urllib
 import sys
 
-class FILE_TRANSFORMER(object):
+class STT_TRANSFORMER(object):
 
     '''To parse json file data from STT processing
 
@@ -186,7 +186,6 @@ class FILE_TRANSFORMER(object):
 
         df = self.parsing()
 
-
         return
 
 
@@ -195,3 +194,11 @@ class FILE_TRANSFORMER(object):
         # text 파일이나 excel 등으로 볼 수 있게 내보내는 과정
 
         return
+
+
+class MRC_TRANSFORMER(object):
+
+    def __init__(self, data, type):
+
+    def
+
