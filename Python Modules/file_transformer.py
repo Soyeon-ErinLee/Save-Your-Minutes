@@ -68,3 +68,50 @@ class STT_transformer(object):
 
         else:
             print("there is no such {} tag").format(tag)
+
+
+    def _segmentation(self, data):
+
+        level0 = list(self.data.values())
+        level1 = list(level0[2].values())
+        level2 = level1[1]
+        level2 = level1[1]
+        level3 = level2['segments']
+
+        df = pd.DataFrame()
+        for script in level3:
+            s = script['start_time']
+            e = script['end_time']
+            l = script['speaker_label']
+            print(s, e, l)
+            df = df.append([(l, s, e)], ignore_index=False)
+        df.columns = ['speaker', 'start_time', 'end_time']
+
+        information = dict()
+        information['full_transcript'] = list(level1[0][0].values())[0]
+        information['speaker_num'] = level2['speakers']
+
+        return df, information
+
+
+    def _parsing(self, data):
+        base_df = self._segmentation()[0]
+
+        return
+
+
+    def to_frontend(self):
+
+        return
+
+
+    def to_model(self):
+
+        return
+
+
+    def file_export(self):
+
+        # text 파일이나 excel 등으로 볼 수 있게 내보내는 과정
+
+        return
