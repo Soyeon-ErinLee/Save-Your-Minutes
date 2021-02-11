@@ -23,8 +23,16 @@ Our intelligent natural language processing tools will help you implement your i
 We deliver our service by a user-freindly website. You simply access it via the internet.
 
 ## How to use
+### Requirements
 
-## About us, *Dobby AI*
+### Basic usage
+![image1](./image1.png)
 
+### Tutorial 
+
+
+## About us, *Dobby-AI*
+![image2](./image2.png)
+*Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. May you be FREE!
 
 ## To be updated
