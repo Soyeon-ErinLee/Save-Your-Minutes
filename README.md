@@ -14,13 +14,13 @@
 
 ## Features
 #### :microphone: STT
-Thanks to whatever API, we can take advantage of the most advanced speech-to-text technology.
+Thanks to Amazon Transcribe, we can take advantage of the most advanced speech-to-text technology.
 
 #### :capital_abcd: NLP
-Our intelligent natural language processing tools will help you implement your ideas easily.
+Our intelligent natural language processing tools understand the context of your dialogue, ensuring high accuracy of the transcripts and minutes we generate.
 
 #### :computer: SaaS
-We deliver our service by a user-freindly website. You simply access it via the internet.
+AI meeting solution at your service, anytime and anywhere. Access our powerful technology on the website.
 
 ## How to use
 ### Requirements
@@ -36,5 +36,3 @@ To be updated
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. May you be FREE!   
 ![image2](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/aboutus.png)
-
-## To be updated
