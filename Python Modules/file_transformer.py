@@ -4,12 +4,10 @@
 # Written by Ju Yeon Lee. justforher12344@gmail.com
 # Co-worker: Min Chan Kim.
 
-import re
 import pandas as pd
 import json
-import requests
-import pymysql
-from datetime import date, timedelta
+import urllib
+import sys
 
 class FILE_TRANSFORMER(object):
 
@@ -35,9 +33,28 @@ class FILE_TRANSFORMER(object):
 
 
     def _load_json(self):
+        ##### AWS 클라우드에 접근 후, html 형식으로 올라간 json 파일을 그대로 크롤링하여 읽어들이는 코드로 수정 예정 ###
+
+        if sys.version_info[0] == 3:
+            from urllib.request import urlopen  # for Python 3.x
+
+        else:
+            from urllib import urlopen  # for Python 2.x
+
+        with urlopen(self.path) as url:
+
+            pre_data = url.read()
+            data = json.loads(pre_data.decode('utf-8'))
+
+        return data
+
+        '''        
+        
         with open(self.path) as jsonfile:
             data = json.load(jsonfile)
         return data
+        
+        '''
 
 
     def _html_tagger(self, string, tag):
@@ -101,7 +118,7 @@ class FILE_TRANSFORMER(object):
         return df
 
 
-    def _parsing(self):
+    def parsing(self):
 
         base_df = self._segmentation()
         level1 = self.level1
@@ -141,9 +158,9 @@ class FILE_TRANSFORMER(object):
         return final_df
 
 
-    def _html_transformer(self):
+    def html_transformer(self):
 
-        df = self._parsing()
+        df = self.parsing()
         html_string = ''
         df['speaker'] = df['speaker'].apply(lambda x: x.split('_')[1])
 
@@ -165,7 +182,10 @@ class FILE_TRANSFORMER(object):
     # 각 자료를 파일로 저장하여 AWS 클라우드로 연결하는 file_connector 모듈 따로 제작 예정
 
 
-    def to_model(self):
+    def model_transformer(self):
+
+        df = self.parsing()
+
 
         return
 
