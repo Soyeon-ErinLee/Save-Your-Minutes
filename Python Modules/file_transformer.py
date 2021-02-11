@@ -67,4 +67,4 @@ class STT_transformer(object):
             return new_string
 
         else:
-            print("there is no such {} tag", format(tag))
+            print("there is no such {} tag").format(tag)
