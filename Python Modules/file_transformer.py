@@ -109,8 +109,8 @@ class STT_transformer(object):
         level2 = level1[2]
         df = pd.DataFrame(level2)
 
-        num_list = pd.merge(df[['start_time', 'alternatives', 'type']].fillna('P'), base_df,\
-                            on='start_time', how='outer').dropna().reset_index()['index'].values
+        num_list = pd.merge(df[['start_time', 'alternatives', 'type']].reset_index().fillna('P'), base_df,\
+                            on='start_time', how='outer').dropna()['index'].values
 
         num_list = list(num_list)
         num_list.append(len(df))
@@ -126,14 +126,14 @@ class STT_transformer(object):
                 content = df.iloc[script, 2][0]['content']
 
                 if script == start_row:
-                    string += content
+                    string = string + content
 
                 else:
                     if df.iloc[script, -1] == 'pronunciation':
                         string = string + ' ' + content
 
                     elif df.iloc[script, -1] == 'punctuation':
-                        string += content
+                        string = string + content
 
             script_list.append(string)
 
