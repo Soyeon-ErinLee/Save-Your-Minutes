@@ -107,8 +107,6 @@ class STT_transformer(object):
         base_df = self._segmentation()
         level1 = self.level1
         level2 = level1[2]
-
-        level2 = level1[2]
         df = pd.DataFrame(level2)
 
         num_list = pd.merge(df[['start_time', 'alternatives', 'type']].fillna('P'), base_df,\
@@ -125,20 +123,16 @@ class STT_transformer(object):
             string = ''
 
             for script in range(start_row, next_row):
-
                 content = df.iloc[script, 2][0]['content']
 
                 if script == start_row:
-
                     string += content
 
                 else:
                     if df.iloc[script, -1] == 'pronunciation':
-
                         string = string + ' ' + content
 
                     elif df.iloc[script, -1] == 'punctuation':
-
                         string += content
 
             script_list.append(string)
@@ -149,6 +143,8 @@ class STT_transformer(object):
 
 
     def _html_transformer(self):
+
+        return
 
 
 
