@@ -1,0 +1,1608 @@
+context,question,text,answer_start,n_words,비고
+"You’re not working on Monday? You didn’t work on Thursday, either! How many vacation days do you get? You certainly seem to get more than I do!
+Well, actually I get twenty-five days of vacation, just like you, but my company allows us to work weekends and trade that for week days off. I worked two Saturdays in February and three Sundays in March, so now I have extra days to take.
+I wish my company was flexible like that, but our office is totally closed on weekends.",How many days did the woman work on the weekend in Februrary?,two Saturdays,,,
+"You’re not working on Monday? You didn’t work on Thursday, either! How many vacation days do you get? You certainly seem to get more than I do!
+Well, actually I get twenty-five days of vacation, just like you, but my company allows us to work weekends and trade that for week days off. I worked two Saturdays in February and three Sundays in March, so now I have extra days to take.
+I wish my company was flexible like that, but our office is totally closed on weekends.",How many vacation days do the woman get?,twenty-five days,,,
+"You’re not working on Monday? You didn’t work on Thursday, either! How many vacation days do you get? You certainly seem to get more than I do!
+Well, actually I get twenty-five days of vacation, just like you, but my company allows us to work weekends and trade that for week days off. I worked two Saturdays in February and three Sundays in March, so now I have extra days to take.
+I wish my company was flexible like that, but our office is totally closed on weekends.",How many days did the woman work on the weekend in March?,three Sundays,,,
+"You’re not working on Monday? You didn’t work on Thursday, either! How many vacation days do you get? You certainly seem to get more than I do!
+Well, actually I get twenty-five days of vacation, just like you, but my company allows us to work weekends and trade that for week days off. I worked two Saturdays in February and three Sundays in March, so now I have extra days to take.
+I wish my company was flexible like that, but our office is totally closed on weekends.",When is the man's office closed?,on weekends,,,
+"You’re not working on Monday? You didn’t work on Thursday, either! How many vacation days do you get? You certainly seem to get more than I do!
+Well, actually I get twenty-five days of vacation, just like you, but my company allows us to work weekends and trade that for week days off. I worked two Saturdays in February and three Sundays in March, so now I have extra days to take.
+I wish my company was flexible like that, but our office is totally closed on weekends.",What are the speakers talking about?,vacation days,,,
+"Well, Mr. Donahue, I think that’s all we have to ask you. Now it’s your turn to do the speaking! Do you have any questions you’d like to ask us about the job?
+Well, yes there are few things. For example, you asked me earlier if I had any project management experience. Does that mean that you’re looking for people with this kind of experience?
+Oh, not necessarily, although clearly it would be an advantage. But no, what we’re looking for is the potential for leadership. Obviously the most important skills for the current job are the necessary computer programming expertise, but if we think someone has the necessary skills set for a leadership role in the future-things like organizational and communication skills, then we’re interested.
+I see. Because, you see, although I haven’t actually done any project management, I did learn the principles when I was in university.",What did the speaker learn in university?,the principles,,,
+"Well, Mr. Donahue, I think that’s all we have to ask you. Now it’s your turn to do the speaking! Do you have any questions you’d like to ask us about the job?
+Well, yes there are few things. For example, you asked me earlier if I had any project management experience. Does that mean that you’re looking for people with this kind of experience?
+Oh, not necessarily, although clearly it would be an advantage. But no, what we’re looking for is the potential for leadership. Obviously the most important skills for the current job are the necessary computer programming expertise, but if we think someone has the necessary skills set for a leadership role in the future-things like organizational and communication skills, then we’re interested.
+I see. Because, you see, although I haven’t actually done any project management, I did learn the principles when I was in university.",What did the speaker ask about earlier?,project management experience,,,
+"Well, Mr. Donahue, I think that’s all we have to ask you. Now it’s your turn to do the speaking! Do you have any questions you’d like to ask us about the job?
+Well, yes there are few things. For example, you asked me earlier if I had any project management experience. Does that mean that you’re looking for people with this kind of experience?
+Oh, not necessarily, although clearly it would be an advantage. But no, what we’re looking for is the potential for leadership. Obviously the most important skills for the current job are the necessary computer programming expertise, but if we think someone has the necessary skills set for a leadership role in the future-things like organizational and communication skills, then we’re interested.
+I see. Because, you see, although I haven’t actually done any project management, I did learn the principles when I was in university.",Is the speaker looking for people with experience?,not necessarily,,,
+"Well, Mr. Donahue, I think that’s all we have to ask you. Now it’s your turn to do the speaking! Do you have any questions you’d like to ask us about the job?
+Well, yes there are few things. For example, you asked me earlier if I had any project management experience. Does that mean that you’re looking for people with this kind of experience?
+Oh, not necessarily, although clearly it would be an advantage. But no, what we’re looking for is the potential for leadership. Obviously the most important skills for the current job are the necessary computer programming expertise, but if we think someone has the necessary skills set for a leadership role in the future-things like organizational and communication skills, then we’re interested.
+I see. Because, you see, although I haven’t actually done any project management, I did learn the principles when I was in university.",What is the speaker looking for?,the potential for leadership,,,
+"Well, Mr. Donahue, I think that’s all we have to ask you. Now it’s your turn to do the speaking! Do you have any questions you’d like to ask us about the job?
+Well, yes there are few things. For example, you asked me earlier if I had any project management experience. Does that mean that you’re looking for people with this kind of experience?
+Oh, not necessarily, although clearly it would be an advantage. But no, what we’re looking for is the potential for leadership. Obviously the most important skills for the current job are the necessary computer programming expertise, but if we think someone has the necessary skills set for a leadership role in the future-things like organizational and communication skills, then we’re interested.
+I see. Because, you see, although I haven’t actually done any project management, I did learn the principles when I was in university.",What is the most important skills for the current job?,the necessary computer programming expertise,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",What has been moved?,the file for new German contract,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",Where did the speaker put the contract file?,in the contract files cabinet,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",When did the speaker put the contract file?,last week,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",What did the speaker change?,the filling system,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",What did the speaker forget to tell?,changed the filling system slightly,,,
+"I can’t believe it! Someone’s moved the file for new German contract, the JDK job. I put it in the contract files cabinet only last week. Why don’t people put things back where they belong? I can’t understand it.
+Oh, sorry Mike. I forgot to tell you. I’ve changed the filling system slightly. There wasn’t room anymore for all the conrtact files in one cabinet. You couldn’t find anything so I’ve spent split them up.
+",Why did the speaker change the filing system?,There wasn’t room anymore for all the conrtact files in one cabinet.,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What are the speakers talking about?,how to use the projector,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What is the camera connected to?,the projector,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+","To switch the projector on and off, which button needs to be used?",the red button,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What does the green button do?,The green button puts the projector on standby,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What is the green button convenient for?,presentations,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What are the blue arrows for?,control the color and the brightness of the image,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What controls the color and brightness of the image?,blue arrows,,,
+"Now we’ve got your camera connected directly to the projector, so we actually don’t need to copy the photos onto the computer at all. You can project directly from your camera!
+Oh, that’s great. It’s just that I have no idea at all how to use the projector.
+Don’t worry. It’s really very easy. First of all, use the red button here to switch it on and off. The green button puts the projector on standby, which is very convenient for presentations. These blue arrows here control the color and the brightness of the image and then there’s this little wheel here. If you turn the wheel towards you, the image gets bigger, and if you turn it away from you, the image gets smaller.
+Okay, that looks easy!
+",What happens if you turn the wheel towards you?,image gets bigger,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",How many people was the reservation made for?,five,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",Where are the customers from?,Limo Car Rentals,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",Who made the reservation?,Mr. Robert Jones,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",When did Mr. Robert Jones make the reservation?,on Friday,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",What time is the reservation?,seven-thirty,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",On what day did the speaker change the reservation?,Monday,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",When was the original reservation made for?,Tuesday,,,
+"Oh, good evening. We’re the party from Limo Car Rentals. We’ve reserved tables for this evening.
+Oh dear, I’m sorry, but we were expecting you tomorrow. Let me just check...yes, Limo Cars, party of five for seven-thirty on Tuesday. The reservation was made by a Mr. Robert Jones on Friday.
+Oh yes, originally we reserved for Tuesday, but we changed the reservation for Monday instead. Didn’t you get a call to change it to this evening?
+No, I’m sorry, we weren’t informed. At least, there’s no record of that change here in the list. Perhaps Mr, Jones forgot to call us. However, don’t worry too much. It’s seven-thirty now and we may have a table free at eight o’ clock, if you’d like to wait until then.
+",What time is the table available?,free at eight o’ clock,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",When did the last number fifteen bus come?,about five minutes ago,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",Where did the speaker come from?,the airport,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",Where does the speaker want to go?,the train station,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",How long does it take to the train station on foot?,ten minutes,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",Which bus is the speaker going to take?,the number fifteen bus,,,
+"Excuse me officer, I’ve just come from the airport and I need to get to the train station. I have absolutely no idea how to get there. Is there a walking distance from here?
+Well, it’s not too far on foot, no, but I see you have quite a bit of luggage there. It could take ten minutes to walk from here, so I think you’d be best using public transportation to be honest. There isn’t a subway station near here, but there’s the number fifteen bus that stops across the street and the train station is just two or three steps down.
+Oh really? Well how frequent are the buses? I mean, will I have to wait long?
+Let’s see. Well, the last number fifteen came by about five minutes ago, and they’re quite frequent. I mean, they come by every eight minutes or so. Yeah, there should be one coming in about three minutes.
+",How frequent are the buses?,every eight minutes,,,
+"Rory, I’ve just spoken to Ann Hanson, the external consultant, and it seems that she can’t make it to Thursday’s planning meeting. I can’t do Friday because we’ve got a safety inspection at the new manufacturing facility, and that can’t be changed. So we’ll have to postpone until next week.
+Oh dear. We’ll, I’d better contact the people from Elgar Plastics then, and find out their availability for next week. I’ll e-mail them explaining the problem.
+No, I’d prefer you to call them. They’re not going to be very happy about this, and on the phone you’ll be able to explain the situation better than in an e-mail message. Sometimes it’s better to contact clients by phone.
+Okay, but I’ll also e-mail our team to announce the postponement.
+",Why is Friday not available for the meeting?,safety inspection at the new manufacturing facility,,,
+"Rory, I’ve just spoken to Ann Hanson, the external consultant, and it seems that she can’t make it to Thursday’s planning meeting. I can’t do Friday because we’ve got a safety inspection at the new manufacturing facility, and that can’t be changed. So we’ll have to postpone until next week.
+Oh dear. We’ll, I’d better contact the people from Elgar Plastics then, and find out their availability for next week. I’ll e-mail them explaining the problem.
+No, I’d prefer you to call them. They’re not going to be very happy about this, and on the phone you’ll be able to explain the situation better than in an e-mail message. Sometimes it’s better to contact clients by phone.
+Okay, but I’ll also e-mail our team to announce the postponement.
+",Who will the speakers contact?,people from Elgar Plastics,,,
+"Rory, I’ve just spoken to Ann Hanson, the external consultant, and it seems that she can’t make it to Thursday’s planning meeting. I can’t do Friday because we’ve got a safety inspection at the new manufacturing facility, and that can’t be changed. So we’ll have to postpone until next week.
+Oh dear. We’ll, I’d better contact the people from Elgar Plastics then, and find out their availability for next week. I’ll e-mail them explaining the problem.
+No, I’d prefer you to call them. They’re not going to be very happy about this, and on the phone you’ll be able to explain the situation better than in an e-mail message. Sometimes it’s better to contact clients by phone.
+Okay, but I’ll also e-mail our team to announce the postponement.
+",Why does the speaker prefer to call rather than send e-mail?,you’ll be able to explain the situation better,,,
+"Rory, I’ve just spoken to Ann Hanson, the external consultant, and it seems that she can’t make it to Thursday’s planning meeting. I can’t do Friday because we’ve got a safety inspection at the new manufacturing facility, and that can’t be changed. So we’ll have to postpone until next week.
+Oh dear. We’ll, I’d better contact the people from Elgar Plastics then, and find out their availability for next week. I’ll e-mail them explaining the problem.
+No, I’d prefer you to call them. They’re not going to be very happy about this, and on the phone you’ll be able to explain the situation better than in an e-mail message. Sometimes it’s better to contact clients by phone.
+Okay, but I’ll also e-mail our team to announce the postponement.
+",When will the next meeting take place?,,,,답 없음
+"Hi Kelly. It’s Tony Buckby from service supplies here. Listen, I’ve got a bit of a problem here and I’m not sure what to do. You see, the maintenance department is here now making some repairs, and they need a spare part for one of the lacquering machines down on shop floor. Well, anyway we don’t have that particular part in stock and we have to order a new one.
+Oh? Well just go ahead and order one. What’s the problem exactly? Don’t you have the catalogue?
+No, that’s not a problem. It’s just that last week Mr. Logan, my supervisor, told me not to order anything without asking him first…. and he’s not here today.
+Oh yes, you’re right. He’s away at a product training in Baltimore.
+",Where does the product training take place?,Baltimore,,,
+"Hi Kelly. It’s Tony Buckby from service supplies here. Listen, I’ve got a bit of a problem here and I’m not sure what to do. You see, the maintenance department is here now making some repairs, and they need a spare part for one of the lacquering machines down on shop floor. Well, anyway we don’t have that particular part in stock and we have to order a new one.
+Oh? Well just go ahead and order one. What’s the problem exactly? Don’t you have the catalogue?
+No, that’s not a problem. It’s just that last week Mr. Logan, my supervisor, told me not to order anything without asking him first…. and he’s not here today.
+Oh yes, you’re right. He’s away at a product training in Baltimore.
+",Who is the supervisor?,Mr. Logan,,,
+"Hi Kelly. It’s Tony Buckby from service supplies here. Listen, I’ve got a bit of a problem here and I’m not sure what to do. You see, the maintenance department is here now making some repairs, and they need a spare part for one of the lacquering machines down on shop floor. Well, anyway we don’t have that particular part in stock and we have to order a new one.
+Oh? Well just go ahead and order one. What’s the problem exactly? Don’t you have the catalogue?
+No, that’s not a problem. It’s just that last week Mr. Logan, my supervisor, told me not to order anything without asking him first…. and he’s not here today.
+Oh yes, you’re right. He’s away at a product training in Baltimore.
+",What is needed to make the repairs?,a spare part for one of the lacquering machines down on shop floor,,,
+"Hi Kelly. It’s Tony Buckby from service supplies here. Listen, I’ve got a bit of a problem here and I’m not sure what to do. You see, the maintenance department is here now making some repairs, and they need a spare part for one of the lacquering machines down on shop floor. Well, anyway we don’t have that particular part in stock and we have to order a new one.
+Oh? Well just go ahead and order one. What’s the problem exactly? Don’t you have the catalogue?
+No, that’s not a problem. It’s just that last week Mr. Logan, my supervisor, told me not to order anything without asking him first…. and he’s not here today.
+Oh yes, you’re right. He’s away at a product training in Baltimore.
+",Is the catalogue a problem?,"No, that’s not a problem.",,,
+"Hi Kelly. It’s Tony Buckby from service supplies here. Listen, I’ve got a bit of a problem here and I’m not sure what to do. You see, the maintenance department is here now making some repairs, and they need a spare part for one of the lacquering machines down on shop floor. Well, anyway we don’t have that particular part in stock and we have to order a new one.
+Oh? Well just go ahead and order one. What’s the problem exactly? Don’t you have the catalogue?
+No, that’s not a problem. It’s just that last week Mr. Logan, my supervisor, told me not to order anything without asking him first…. and he’s not here today.
+Oh yes, you’re right. He’s away at a product training in Baltimore.
+",Who is making some repairs?,the maintenance department,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",What are the speakers talking about?,motorbike,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",Which color is Emma's motorbike?,blue,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",Which brand is Emma's motorbike?,City Zip,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",What will the speaker do next?,call our suppliers,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",How long does it take to fix the bike if the parts are ready?,in two or three days,,,
+"Hello, Tom Wilson’s, can I help you?
+Hi there, it’s Emma Lloyd here. I’m calling about my motorbike. Is it ready to be collected yet?
+Can you remind me, what’s the maker of the bike?
+It’s a City Zip. It’s blue.
+Oh yes. We had to order in some parts, but they still haven’t arrived yet I’m afraid.
+Do you know when the bike will be ready to pick up?
+Sorry, I don’t know. But I’ll call our suppliers and find out if they’ve sent out the spare parts yet. Once the parts are here we can fix the bike in two or three days.
+Okay, I’ll give you a call at the end of the week, then.
+",When will the speakers talk next?,at the end of the week,,,
+"I heard you won the Epstein scholarship.
+Yeah, I just found out yesterday.
+Way to go! I actually tried for it myself last year.
+Oh, really? You're certainly a worthy candidate.
+That's kind. But you deserve it more than I did.
+Nonsense. You're being too modest.
+",Which scholarship did the man win?,the Epstein scholarship,,,
+"I heard you won the Epstein scholarship.
+Yeah, I just found out yesterday.
+Way to go! I actually tried for it myself last year.
+Oh, really? You're certainly a worthy candidate.
+That's kind. But you deserve it more than I did.
+Nonsense. You're being too modest.
+",When did the man find out that he won the scholarship?,yesterday,,,
+"I heard you won the Epstein scholarship.
+Yeah, I just found out yesterday.
+Way to go! I actually tried for it myself last year.
+Oh, really? You're certainly a worthy candidate.
+That's kind. But you deserve it more than I did.
+Nonsense. You're being too modest.
+",What are the speakers talking about?,the Epstein scholarship,,,
+"I heard you won the Epstein scholarship.
+Yeah, I just found out yesterday.
+Way to go! I actually tried for it myself last year.
+Oh, really? You're certainly a worthy candidate.
+That's kind. But you deserve it more than I did.
+Nonsense. You're being too modest.
+",Who won the scholarship last year?,,,,답 없음
+"So, are you going to take a job in Taiwan.
+I accepted it. But I'm worried that it was a mistake.
+Why, it's a great career developing opportunity.
+I'm not sure I want to be so far from friends and family.
+You don't have to stay there forever.
+I know, but it could also be hard to adapt to life there.
+",Where is the man going to take a job?,Taiwan,,,
+"So, are you going to take a job in Taiwan.
+I accepted it. But I'm worried that it was a mistake.
+Why, it's a great career developing opportunity.
+I'm not sure I want to be so far from friends and family.
+You don't have to stay there forever.
+I know, but it could also be hard to adapt to life there.
+",Why is the man worried about taking a job in Taiwan?,I'm not sure I want to be so far from friends and family.,,,
+"So, are you going to take a job in Taiwan.
+I accepted it. But I'm worried that it was a mistake.
+Why, it's a great career developing opportunity.
+I'm not sure I want to be so far from friends and family.
+You don't have to stay there forever.
+I know, but it could also be hard to adapt to life there.
+",What topic is the talk about?,a job in Taiwan,,,
+"So, are you going to take a job in Taiwan.
+I accepted it. But I'm worried that it was a mistake.
+Why, it's a great career developing opportunity.
+I'm not sure I want to be so far from friends and family.
+You don't have to stay there forever.
+I know, but it could also be hard to adapt to life there.
+",What is the difficulty of living in Taiwan?,it could also be hard to adapt to life there.,,,
+"So, are you going to take a job in Taiwan.
+I accepted it. But I'm worried that it was a mistake.
+Why, it's a great career developing opportunity.
+I'm not sure I want to be so far from friends and family.
+You don't have to stay there forever.
+I know, but it could also be hard to adapt to life there.
+",When is the man going to take a job?,,,,답 없음
+"I have no idea how you stay in such good shape fit.
+Simple. I basically just watch what I eat.
+I try to eat well too, but I can't resist sweet.
+I've gotten to the point where I can ignore cravings.
+You must exercise regularly too, right?
+Not that much, but I do jog a bit.
+",How does the woman stay is such good shape fit?,basically just watch what I eat.,,,
+"I have no idea how you stay in such good shape fit.
+Simple. I basically just watch what I eat.
+I try to eat well too, but I can't resist sweet.
+I've gotten to the point where I can ignore cravings.
+You must exercise regularly too, right?
+Not that much, but I do jog a bit.
+",What cannot the man resist?,sweet,,,
+"I have no idea how you stay in such good shape fit.
+Simple. I basically just watch what I eat.
+I try to eat well too, but I can't resist sweet.
+I've gotten to the point where I can ignore cravings.
+You must exercise regularly too, right?
+Not that much, but I do jog a bit.
+",Does the woman exercise regularly?,Not that much,,,
+"I have no idea how you stay in such good shape fit.
+Simple. I basically just watch what I eat.
+I try to eat well too, but I can't resist sweet.
+I've gotten to the point where I can ignore cravings.
+You must exercise regularly too, right?
+Not that much, but I do jog a bit.
+",Which exercise does the woman do?,jog,,,
+"I have no idea how you stay in such good shape fit.
+Simple. I basically just watch what I eat.
+I try to eat well too, but I can't resist sweet.
+I've gotten to the point where I can ignore cravings.
+You must exercise regularly too, right?
+Not that much, but I do jog a bit.
+",Will speakers do exercise together?,,,,답 없음
+"Are you going anywhere tonight?
+I'm taking my parents to a movie and then dinner afterwards.
+What are you going to see?
+Beautiful lives. It's not my kind of thing, but my mother picked it.
+The reviews have been mixed. But I wouldn't mind seeing it.
+Well, you are welcome to join us.
+Thanks, but I'll let you enjoy your family time together.
+",Where will the man go tonight?,to a movie and then dinner afterwards,,,
+"Are you going anywhere tonight?
+I'm taking my parents to a movie and then dinner afterwards.
+What are you going to see?
+Beautiful lives. It's not my kind of thing, but my mother picked it.
+The reviews have been mixed. But I wouldn't mind seeing it.
+Well, you are welcome to join us.
+Thanks, but I'll let you enjoy your family time together.
+",Which movie is the man going to see?,Beautiful lives.,,,
+"Are you going anywhere tonight?
+I'm taking my parents to a movie and then dinner afterwards.
+What are you going to see?
+Beautiful lives. It's not my kind of thing, but my mother picked it.
+The reviews have been mixed. But I wouldn't mind seeing it.
+Well, you are welcome to join us.
+Thanks, but I'll let you enjoy your family time together.
+",Who picked the movie?,my mother,,,
+"Are you going anywhere tonight?
+I'm taking my parents to a movie and then dinner afterwards.
+What are you going to see?
+Beautiful lives. It's not my kind of thing, but my mother picked it.
+The reviews have been mixed. But I wouldn't mind seeing it.
+Well, you are welcome to join us.
+Thanks, but I'll let you enjoy your family time together.
+",How is the review of the movie?,The reviews have been mixed.,,,
+"Are you going anywhere tonight?
+I'm taking my parents to a movie and then dinner afterwards.
+What are you going to see?
+Beautiful lives. It's not my kind of thing, but my mother picked it.
+The reviews have been mixed. But I wouldn't mind seeing it.
+Well, you are welcome to join us.
+Thanks, but I'll let you enjoy your family time together.
+",What did the man suggest to the woman?,you are welcome to join us,,,
+"Are you almost finished doing the calculations for our report?
+I could use some more time if that's okay.
+Why? I thought you were quiet on schedule.
+I was. But I found some errors and had a start from scratch.
+Okay, can you get it done by tomorrow afternoon, then?
+Sure, if I allowed to focus solely on this task.
+",What is the main topic of the talk?,calculations for our report,,,
+"Are you almost finished doing the calculations for our report?
+I could use some more time if that's okay.
+Why? I thought you were quiet on schedule.
+I was. But I found some errors and had a start from scratch.
+Okay, can you get it done by tomorrow afternoon, then?
+Sure, if I allowed to focus solely on this task.
+",What is agreed upon?,get it done by tomorrow afternoon,,,
+"Are you almost finished doing the calculations for our report?
+I could use some more time if that's okay.
+Why? I thought you were quiet on schedule.
+I was. But I found some errors and had a start from scratch.
+Okay, can you get it done by tomorrow afternoon, then?
+Sure, if I allowed to focus solely on this task.
+",What does the man want to get the work done by tomorrow afternoon?,focus solely on this task,,,
+"Are you almost finished doing the calculations for our report?
+I could use some more time if that's okay.
+Why? I thought you were quiet on schedule.
+I was. But I found some errors and had a start from scratch.
+Okay, can you get it done by tomorrow afternoon, then?
+Sure, if I allowed to focus solely on this task.
+",What errors did the man find?,,,,답 없음
+"Are you almost finished doing the calculations for our report?
+I could use some more time if that's okay.
+Why? I thought you were quiet on schedule.
+I was. But I found some errors and had a start from scratch.
+Okay, can you get it done by tomorrow afternoon, then?
+Sure, if I allowed to focus solely on this task.
+",Why couldn't the man finish the work?,found some errors and had a start from scratch,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",What are the speakers talking about?,temporary position in sales,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",Who placed an ad for temporary position in sales?,human resources,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",Who is being replaced?,Kerry,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",Why does Kerry leave?,maternity leave,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",When will Kerry leave?,It's several months away,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",Why do they find the replacement so early?,we want to her to train whoever we hire.,,,
+"I noticed that human resources place an ad for temporary position in sales.
+Yeah, we are looking to replace Kerry while she's on maternity leave.
+I didn't realize it was so soon. When does she leave?
+It's several months away actually. But we want to her to train whoever we hire.
+Maybe Merry from marketing could be her replacement.
+That's a good ides. I hadn't thought of looking within the company.
+",Who could be good replacement?,Merry ffrom marketing,,,
+"How's your dissertation coming along?
+The overall structure has finally taking shape in my mind.
+Have you started drafting the actual paper?
+Not yet. I just finished arranging my notes.
+Well, hopefully all these preliminary work pays off!
+Yeah, but there are still some sources that I want to check out.
+",Has the man started drafting the actual paper?,Not yet.,,,
+"How's your dissertation coming along?
+The overall structure has finally taking shape in my mind.
+Have you started drafting the actual paper?
+Not yet. I just finished arranging my notes.
+Well, hopefully all these preliminary work pays off!
+Yeah, but there are still some sources that I want to check out.
+",What is the main topic of the talk?,dissertation,,,
+"How's your dissertation coming along?
+The overall structure has finally taking shape in my mind.
+Have you started drafting the actual paper?
+Not yet. I just finished arranging my notes.
+Well, hopefully all these preliminary work pays off!
+Yeah, but there are still some sources that I want to check out.
+",What did the man finish?,arranging my notes,,,
+"How's your dissertation coming along?
+The overall structure has finally taking shape in my mind.
+Have you started drafting the actual paper?
+Not yet. I just finished arranging my notes.
+Well, hopefully all these preliminary work pays off!
+Yeah, but there are still some sources that I want to check out.
+",What does the woman wish for man?,hopefully all these preliminary work pays off!,,,
+"How's your dissertation coming along?
+The overall structure has finally taking shape in my mind.
+Have you started drafting the actual paper?
+Not yet. I just finished arranging my notes.
+Well, hopefully all these preliminary work pays off!
+Yeah, but there are still some sources that I want to check out.
+",What does the man have to do in the future?,there are still some sources that I want to check out.,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",What are the speakers talking about?,shirt,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",Which color of shirt does the woman like?,red shirt,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",What is the problem about the red shirt?,80 dollars is two steep,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",Which shirt did the man recommend to the woman?,blue one,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",How much is the blue shirt?,55 dollars,,,
+"Are you looking for something in particular, ma'am?
+Well, I like this red shirt, but 80 dollars is two steep.
+Roughly, how much will you looking to spend?
+Somewhere around 50 dollars.
+Then, how about this blue one for 55 dollars?
+I really like the style, but I prefer the color of the other one.
+",What is the budget?,Somewhere around 50 dollars,,,
+"Hi, James. Where were you all day?
+I was at the library.
+Again? You spend lots of time there.
+Well, it's a great place to get away from it all.
+I guess. I'm not really the solitary type though.
+Yes, it's not for eveyone.
+",How many hours was James at the library?,,,,답 없음
+"Hi, James. Where were you all day?
+I was at the library.
+Again? You spend lots of time there.
+Well, it's a great place to get away from it all.
+I guess. I'm not really the solitary type though.
+Yes, it's not for eveyone.
+",Where was James all day?,at the library,,,
+"Hi, James. Where were you all day?
+I was at the library.
+Again? You spend lots of time there.
+Well, it's a great place to get away from it all.
+I guess. I'm not really the solitary type though.
+Yes, it's not for eveyone.
+",Why does James find the library a good place?,it's a great place to get away from it all.,,,
+"Hi, James. Where were you all day?
+I was at the library.
+Again? You spend lots of time there.
+Well, it's a great place to get away from it all.
+I guess. I'm not really the solitary type though.
+Yes, it's not for eveyone.
+",What did the speakers agree upon?,I'm not really the solitary type,,,
+"Hi, James. Where were you all day?
+I was at the library.
+Again? You spend lots of time there.
+Well, it's a great place to get away from it all.
+I guess. I'm not really the solitary type though.
+Yes, it's not for eveyone.
+",Who is the solitary type?,not for eveyone,,,
+"I'm freaking out! I have three major work deadlines on the horizon.
+Relax! You've always delivered in the past.
+But the workload is crazy this time, even by my usual standards.
+Well, don't push yourself too hard. Remember what happened before.
+I know. I can't afford time off to recover again.
+Just stay focused. You were appointed to this position at the company for a reason.
+",How many works is the man dealing with now?,three major work deadlines,,,
+"I'm freaking out! I have three major work deadlines on the horizon.
+Relax! You've always delivered in the past.
+But the workload is crazy this time, even by my usual standards.
+Well, don't push yourself too hard. Remember what happened before.
+I know. I can't afford time off to recover again.
+Just stay focused. You were appointed to this position at the company for a reason.
+",When will the next meeting be held?,,,,답 없음
+"I'm freaking out! I have three major work deadlines on the horizon.
+Relax! You've always delivered in the past.
+But the workload is crazy this time, even by my usual standards.
+Well, don't push yourself too hard. Remember what happened before.
+I know. I can't afford time off to recover again.
+Just stay focused. You were appointed to this position at the company for a reason.
+",What recommendation did woman give to the man?,don't push yourself too hard,,,
+"I'm freaking out! I have three major work deadlines on the horizon.
+Relax! You've always delivered in the past.
+But the workload is crazy this time, even by my usual standards.
+Well, don't push yourself too hard. Remember what happened before.
+I know. I can't afford time off to recover again.
+Just stay focused. You were appointed to this position at the company for a reason.
+",How is the workload?,the workload is crazy,,,
+"I'm freaking out! I have three major work deadlines on the horizon.
+Relax! You've always delivered in the past.
+But the workload is crazy this time, even by my usual standards.
+Well, don't push yourself too hard. Remember what happened before.
+I know. I can't afford time off to recover again.
+Just stay focused. You were appointed to this position at the company for a reason.
+",Why is the man stressed?,the workload is crazy,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,
