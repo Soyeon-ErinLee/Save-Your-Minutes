@@ -8,7 +8,7 @@ import re
 import pandas as pd
 import json
 import requests
-import py mysql
+import pymysql
 from datetime import date, timedelta
 
 
@@ -37,3 +37,34 @@ class STT_transformer(object):
         with open(self.path) as jsonfile:
             data = json.load(jsonfile)
         return data
+
+
+    def _html_adapter(self, string, tag):
+
+        assert type(string) is str, print("text input must be string.")
+        assert type(string) is str, print("tag input must be string.")
+
+        ''' 
+
+        tag information
+
+        1. start : we add "<strong>" at the front part of input, which contains start time and speaker information
+        2. middle : we add "</strong><br>" at the front part of the input, which is usually real script.
+        3. end : we add "<br><br>" at the last part of the input, which is usually real script.
+
+        '''
+
+        if tag == 'start':
+            new_string = "<strong>" + string
+            return new_string
+
+        elif tag == 'middle':
+            new_string = "</strong><br>" + string
+            return new_string
+
+        elif tag == 'end':
+            new_string = string + " <br><br>"
+            return new_string
+
+        else:
+            print("there is no such {} tag", format(tag))
