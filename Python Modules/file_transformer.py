@@ -11,8 +11,7 @@ import requests
 import pymysql
 from datetime import date, timedelta
 
-
-class STT_transformer(object):
+class FILE_TRANSFORMER(object):
 
     '''To parse json file data from STT processing
 
@@ -102,7 +101,7 @@ class STT_transformer(object):
         return df
 
 
-    def _parsing(self, data):
+    def _parsing(self):
 
         base_df = self._segmentation()
         level1 = self.level1
@@ -144,13 +143,26 @@ class STT_transformer(object):
 
     def _html_transformer(self):
 
-        return
+        df = self._parsing()
+        html_string = ''
+        df['speaker'] = df['speaker'].apply(lambda x: x.split('_')[1])
 
+        for i in range(len(df)):
+            speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
+            start_time = df.iloc[i, 1]
+            text_temp = df.iloc[i, -1]
+            print(speaker_temp, start_time, text_temp)
 
+            speaker = self._html_tagger(speaker_temp, 'start')
+            text = self._html_tagger(text_temp, 'middle')
+            text = self._html_tagger(text, 'end')
 
-    def to_frontend(self):
+            new_string = speaker + ' ' + start_time + ' ' + text
+            html_string += new_string
 
-        return
+        return html_string
+
+    # 각 자료를 파일로 저장하여 AWS 클라우드로 연결하는 file_connector 모듈 따로 제작 예정
 
 
     def to_model(self):
