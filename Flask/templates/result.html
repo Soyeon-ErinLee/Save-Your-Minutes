@@ -35,9 +35,14 @@
             display: none;
         }
 
-        .addagenda {
+        .form-group2 {
             display: none;
         }
+
+        .sugans {
+            display: none;
+        }
+
 
         .is-readonly input[disabled], form.is-readonly textarea[disabled] {
 
@@ -62,6 +67,10 @@
             height: 700px;
         }
 
+        .askai {
+            color: darkblue;
+        }
+
         .alas {
             word-wrap: break-word;
         }
@@ -79,10 +88,10 @@
             display: none;
         }
 
-        {
-            display: none
-        ;
+        #ai {
+            display: none;
         }
+
         #iframe {
             display: none;
         }
@@ -116,6 +125,23 @@
             color: #444;
             margin: 20px auto;
             overflow: hidden;
+        }
+
+        .float {
+            float: right;
+            padding: 0;
+            border: none;
+            background: none;
+        }
+
+        .righta {
+            width: 400px;
+        }
+
+        .subsub {
+            float: right;
+            background: white;
+            color: #000;
         }
 
         audio {
@@ -297,7 +323,7 @@
                                         <td>Google and IBM works the best</td>
                                     </tr>
                                 </table>
-                                <table class="table table-bordered">
+                                <table class="table addel table-bordered" id="addel">
 
                                     <tr>
                                         <td><strong>Action Items</strong></td>
@@ -314,6 +340,7 @@
                                         <td>Kim, Sierra</td>
                                         <td>Next week Wednesday</td>
                                     </tr>
+                                    <input type="button" class="float" value="Add" id="addrow">
                                 </table>
                                 <table class="table table-bordered">
                                     <tr>
@@ -323,8 +350,13 @@
                                         <td></td>
                                     </tr>
                                 </table>
-                                <div class="form-group2">
+
+                                <br>
+                                <input type="button" name="clone" class="btn btn-file clone"
+                                       value="Add" onclick="toggler('form-group2');">
+                                <div class="form-group2" id="form-group2">
                                     <div id="addagenda" class="addagenda">
+                                        <br>
                                         <label><strong>New Agenda</strong></label>
                                         <table class="table table-bordered">
                                             <tr>
@@ -340,7 +372,7 @@
                                                 <td></td>
                                             </tr>
                                         </table>
-                                        <table class="table table-bordered">
+                                        <table class="table table-bordered addel2" id="addel2">
 
                                             <tr>
                                                 <td><strong>Action Items</strong></td>
@@ -357,6 +389,7 @@
                                                 <td></td>
                                                 <td></td>
                                             </tr>
+                                            <input type="button" class="float" value="Add" id="addrow2">
                                         </table>
                                         <table class="table table-bordered">
                                             <tr>
@@ -368,15 +401,25 @@
                                         </table>
                                     </div>
                                     <input type="button" name="clone" class="btn btn-file clone"
-                                           value="Add" onclick="toggler('addagenda');">
+                                           value="Add">
                                     <input type="button" name="remove" class="btn btn-file remove"
                                            value="Remove">
                                 </div>
                             </div>
                         </div>
+
                         <button type="button" class="btn btn-edit js-edit" onclick="Editable2()">Edit</button>
                         <button type="button" class="btn btn-save js-save" onclick="saveEdits2()">Save</button>
                         <button type="button" class="btn" id="export">Download</button>
+
+                        <button type="button" class="btn askai" id=askai onclick="toggler('ai');">Ask AI</button><br><br>
+                                <div class="ai" id="ai">
+                                    <input type="text" class="righta">
+                                    <input type="button" value="submit" class="btn btn-sm subsub rounded"
+                                           onclick="toggler('sugans')">
+                                    <br><br>
+                                    <div id="sugans" class="sugans">Suggested Answer</div>
+                                </div>
                     </form>
                 </div>
                 <!--Grid column-->
@@ -517,11 +560,21 @@
         localStorage.userEdits = userVersion;
     }
 
-    function checkEdits() {
-        //find out if the user has previously saved edits
-        if (localStorage.userEdits != null)
-            document.getElementById("edit").innerHTML = localStorage.userEdits;
-    }
+    $(document).ready(function () {
+        var tbody = $('#addel').children('tbody');
+        var table = tbody.length ? tbody : $('#addel');
+        $('#addrow').click(function () {
+            table.append('<tr><td></td><td></td><td></td></tr>');
+        })
+    });
+
+    $(document).ready(function () {
+        var tbody = $('#addel2').children('tbody');
+        var table = tbody.length ? tbody : $('#addel2');
+        $('#addrow2').click(function () {
+            table.append('<tr><td></td><td></td><td></td></tr>');
+        })
+    });
 
     $(document).ready(function () {
         $('.js-edit, .js-save').on('click', function () {
@@ -597,8 +650,8 @@
     $(document).on("click", "input.remove", remove);
 
     function toggler(divId) {
-    $("#" + divId).toggle();
-}
+        $("#" + divId).toggle();
+    }
 
 
 </script>
