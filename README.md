@@ -34,5 +34,5 @@ To be updated
 To be updated
 
 ## About us, *Dobby-AI*
-*Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. May you be FREE!   
+*Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. *May you be FREE!*   
 ![image2](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/aboutus.png)
