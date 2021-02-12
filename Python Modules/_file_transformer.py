@@ -16,7 +16,7 @@ class STT_TRANSFORMER(object):
     Example
     -------
     >>> import sys
-    >>> sys.path.append('/home/hoheon/Packages/')
+    >>> sys.path.append('######')
     >>> ## 사용방법
 
     >>> json_path = ## AWS에서 해당 위치 지정
