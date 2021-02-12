@@ -162,11 +162,11 @@ class STT_TRANSFORMER(object):
 
         df = self.parsing()
         html_string = ''
-        df['speaker'] = df['speaker'].apply(lambda x: x.split('_')[1])
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1])+1)
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
-            start_time = df.iloc[i, 1]
+            start_time_temp = df.iloc[i, 1] # 분단위 데이터 확인 후 코드 수정 예정
             text_temp = df.iloc[i, -1]
             print(speaker_temp, start_time, text_temp)
 
