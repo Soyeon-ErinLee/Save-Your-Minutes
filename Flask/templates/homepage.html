@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon"
+          href="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/logo2.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Rouge+Script&display=swap" rel="stylesheet">
+    <title>Save Your Minutes</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="../static/css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="../static/css/style.min.css" rel="stylesheet">
+    <style type="text/css">
+        @media (min-width: 800px) and (max-width: 850px) {
+            .navbar:not(.top-nav-collapse) {
+                background: #1C2331 !important;
+            }
+        }
+
+        .navbar-custom {
+            background-color: #080a29;
+        }
+
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #080a29; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+
+        #fontfont {
+            font-family: 'Petit Formal Script', cursive;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom scrolling-navbar">
+    <div class="container">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="/">
+
+            <img src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/logo1.png"
+                 height="30" alt="logo">
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#tutorial">Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#upload">Upload File
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus">About Us</a>
+                </li>
+            </ul>
+
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+
+                <li class="nav-item">
+                    <a href="https://github.com/Soyeon-ErinLee/Dobby-AI" class="nav-link border border-light rounded"
+                       target="_blank">
+                        <i class="fab fa-github mr-2"></i>Visit Our GitHub
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!--Carousel Wrapper-->
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="view"
+                 style="background-image: url('https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/kpmg_office.png'); background-repeat: no-repeat; background-size: cover;">
+
+                <!-- Mask & flexbox options-->
+                <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+                    <!-- Content -->
+                    <div class="text-center white-text mx-5 wow fadeIn">
+                        <h1 class="mb-4 font-weight-bold">
+                            <img src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/logo4.png"
+                                 width="60" height="42"
+                                 class="d-inline-block align-top" alt="">
+                            <strong>Professional Minute Taking AI</strong>
+                        </h1>
+
+                        <h4 class="font-italic" id="fontfont">
+                            <strong>" Save your minutes, we'll write your minutes." <br></strong>
+                        </h4>
+
+                        <p class="mb-4 d-none d-md-block">
+                            <strong>We provide the best AI solution to convert your meeting recordings into professional
+                                business
+                                minutes and transcripts.<br>
+
+                            </strong>
+                        </p>
+
+                        <a href="#tutorial"
+                           class="btn btn-outline-white btn-lg">Start
+                            free tutorial
+                            <i class="fas fa-graduation-cap ml-2"></i>
+                        </a>
+                    </div>
+                    <!-- Content -->
+
+                </div>
+                <!-- Mask & flexbox options-->
+
+            </div>
+        </div>
+        <!--/First slide-->
+
+    </div>
+    <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+<!--Main layout-->
+<main>
+    <div class="container">
+
+        <!--Section: Main info-->
+        <section class="mt-5 wow fadeIn">
+
+            <!--Grid row-->
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <img src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/minutes.jpg"
+                         class="img-fluid z-depth-1-half"
+                         alt="">
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 mb-4">
+
+                    <!-- Main heading -->
+                    <h3 class="h3 mb-3">About <strong class="font-italic" id="fontfont">Save Your Minutes</strong></h3>
+                    <p>Simply upload your recorded meeting, we support all types of audio files.</p>
+                    <p>To learn more about <strong class="font-italic">Save Your Minutes</strong>, feel free to read the
+                        following details.
+                    </p>
+                    <!-- Main heading -->
+
+                    <hr>
+
+                    <p>
+                        With <strong class="font-italic">Save Your Minutes</strong>, writing meeting minutes has never been easier.<br>
+                        Our AI analyzes your meeting recordings to create
+                        <strong>Speaker-diarized transcriptions</strong> and <strong>professional minutes</strong>.<br>
+                        Once the results have been processed, you can edit or rearrange the items to finalize
+                        your document.
+
+                    </p>
+
+                    <!-- CTA -->
+                    <a href="/"
+                       class="btn btn-grey btn-md">Demo
+                        <i class="fas fa-download ml-1"></i>
+                    </a>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </section>
+        <!--Section: Main info-->
+
+        <hr id="tutorial" class="my-5">
+        <!--Section: Main features & Quick Start-->
+        <section>
+
+            <h3 class="h3 text-center mb-5">Tutorial</h3>
+
+            <!--Grid row-->
+            <div class="row wow fadeIn">
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 px-4">
+
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-1 mr-3">
+                            <i class="fas fa-microphone-alt fa-2x indigo-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title">STT</h5>
+                            <p class="grey-text">Thanks to <strong class="font-italic">Amazon Transcribe</strong>, we
+                                can take advantage of the most advanced
+                                speech-to-text technology.</p>
+                        </div>
+                    </div>
+                    <!--/First row-->
+
+                    <div style="height:30px"></div>
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-1 mr-3">
+                            <i class="fas fa-language fa-2x blue-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title">NLP</h5>
+                            <p class="grey-text">Our intelligent natural language processing tools understand the
+                                context of your dialogue,
+                                ensuring high accuracy of the transcripts and minutes we generate.
+                            </p>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+
+                    <div style="height:30px"></div>
+
+                    <!--Third row-->
+                    <div class="row">
+                        <div class="col-1 mr-3">
+                            <i class="fas fa-laptop fa-2x cyan-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h5 class="feature-title">SaaS</h5>
+                            <p class="grey-text">AI meeting solution at your service, anytime and anywhere. Access our
+                                powerful technology on
+                                the website.</p>
+                        </div>
+                    </div>
+                    <!--/Third row-->
+
+                </div>
+                <!--/Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12">
+
+                    <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dyRsYk0LyA8"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--/Grid column-->
+
+            </div>
+            <!--/Grid row-->
+
+        </section>
+        <!--Section: Main features & Quick Start-->
+        <hr id="upload" class="my-5">
+        <!--Section: Upload-->
+        <section class="mt-5 wow fadeIn">
+
+            <!--Grid row-->
+
+            <div class="card-body text-center py-10 px-10 my-5 mx-5">
+                <h3 class="h3 text-center mb-3">
+                    <strong>Drop your files here!</strong>
+                </h3>
+                <p>
+                    <strong class="font-italic" id="fontfont"> Save Your Minutes</strong> supports any audio file(mp3, wav, m4a).
+                </p>
+            </div>
+            <head>
+                <meta charset="UTF-8">
+                <title>Flask-Dropzone</title>
+                {{ dropzone.load_css() }}
+                {{ dropzone.style('border: 3px dashed #080a29; margin: 4%; min-height: 340px; opacity:0.8;') }}
+            </head>
+            <body>
+            {{ dropzone.create(action='upload') }}
+            {{ dropzone.load_js() }}
+            {{ dropzone.config() }}
+            </body>
+
+            <!--Grid row-->
+
+        </section>
+
+        <hr id="aboutus" class="my-5">
+        <!--Section: Not enough-->
+        <section>
+
+            <h2 class="my-5 h3 text-center">About Us</h2>
+
+            <!--First row-->
+            <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+                <!--First column-->
+                <div class="col-md-4">
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x pink-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Soyeon Lee</h6>
+                            <p class="grey-text">Designated Front-end & <br> Interface Designer <br>
+                                Statistics at Korea University <br> erinlee42@naver.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/First row-->
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x orange-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Juyeon Lee</h6>
+                            <p class="grey-text">The Master of Algorithms<br>Digital Analytics at Yonsei University <br>justforher12344@gmail.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+
+                    <!--Third row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x yellow-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Jihyun Jeon</h6>
+                            <p class="grey-text">Proficient Data Scientist <br>Statistics at Korea University<br>jh.jeon1723@gmail.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/Third row-->
+
+                </div>
+                <!--/First column-->
+
+                <!--Second column-->
+                <div class="col-md-4 flex-center">
+                    <img src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/dobby.png"
+                         alt="Dobby_AI"
+                         class="z-depth-0 img-fluid">
+                </div>
+                <!--/Second column-->
+
+                <!--Third column-->
+                <div class="col-md-4 mt-2">
+                    <!--First row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x fa-2x indigo-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Minchan Kim</h6>
+                            <p class="grey-text">Logic & Network Developing Genius<br>
+                                AI at Korea Advanced Institute of Science and Technology<br>k21mchan@gmail.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+
+                    </div>
+                    <!--/First row-->
+
+                    <!--Second row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x purple-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Gayoung Koo</h6>
+                            <p class="grey-text">Outstanding Business Scholar<br>Business at Seoul National
+                                University<br>kgy990113@gmail.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/Second row-->
+
+                    <!--Third row-->
+                    <div class="row">
+                        <div class="col-2">
+                            <i class="fas fa-hat-wizard fa-2x green-text"></i>
+                        </div>
+                        <div class="col-10">
+                            <h6 class="feature-title font-weight-bold" id="fontfont">Seunghyun Hah</h6>
+                            <p class="grey-text">Business Logistics Champion<br>Business at Yonsei University<br>seunghyunhah@gmail.com
+                            </p>
+                            <div style="height:15px"></div>
+                        </div>
+                    </div>
+                    <!--/Third row-->
+
+                </div>
+                <!--/Third column-->
+
+            </div>
+            <!--/First row-->
+        </section>
+        <!--Section: Not enough-->
+
+        <hr class="mb-5">
+
+
+    </div>
+</main>
+<!--Main layout-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
+
+    <!--Call to action-->
+    <div class="pt-4">
+        <a class="btn btn-outline-white" href="#tutorial"
+           role="button">Start
+            free tutorial
+            <i class="fas fa-graduation-cap ml-2"></i>
+        </a>
+    </div>
+    <!--/.Call to action-->
+
+    <hr class="my-4">
+
+    <!-- Social icons -->
+    <div class="pb-4">
+
+        <a href="https://github.com/Soyeon-ErinLee/Dobby-AI" target="_blank">
+            <i class="fab fa-github mr-3"></i>
+        </a>
+
+    </div>
+    <!-- Social icons -->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3">
+        © 2021 Copyright
+        <a>DobbyAI</a>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="../static/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="../static/js/mdb.min.js"></script>
+<!-- Initializations -->
+<script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+</script>
+<script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+
+</html>
