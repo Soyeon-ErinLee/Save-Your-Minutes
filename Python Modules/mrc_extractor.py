@@ -28,6 +28,19 @@ def get_top3_passages(query, full_context, max_seq_len=512):
 	n_text=len(context)
 	n_token_query = len(tokenizer(query)['input_ids']) + 1
 
+	i=0
+	texts=[]
+	while i<= n_text-1:
+	  index=i+1
+	  while index<=n_text-1:
+	    if len(tokenizer(" ".join(context[i:index+1]))['input_ids']) > max_seq_len-n_token_query:
+	      break;
+	    index += 1
+	  texts.append(" ".join(context[i: index]))
+
+	  i=index
+	return texts
+
 
 
 def get_topN_answers(query, texts, n=1):
