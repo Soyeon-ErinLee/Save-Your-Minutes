@@ -20,8 +20,7 @@ def get_answer(query, context, model="ahotrod/electra_large_discriminator_squad2
 	return query, res['answer'], res['score']
 
 
-## 추가 수정
-def get_top3_passages(query, full_context, max_seq_len=512):
+def get_sep_passages(query, full_context, max_seq_len=512):
 	# <br> 처리 & ' 처리 
 	context=[ x for x in full_context.split('<br>') if x]
 	query='what is the topic?'
@@ -39,7 +38,7 @@ def get_top3_passages(query, full_context, max_seq_len=512):
 	  texts.append(" ".join(context[i: index]))
 
 	  i=index
-	return texts
+	return texts[]
 
 
 
