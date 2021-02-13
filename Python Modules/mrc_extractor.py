@@ -8,11 +8,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipe
 
 class MRC_EXTRACTION:
 
-	def __init__(self, query, full_context, max_seq_len=512, \
+	def __init__(self, queries, full_context, max_seq_len=512, \
               trained_model1="amberoad/bert-multilingual-passage-reranking-msmarco", \
               trained_model2="ahotrod/electra_large_discriminator_squad2_512"):
-		#self.queries = queries
-		self.query = query
+		self.queries = queries
+		#self.query = query
 		self.full_context = full_context
 		self.max_seq_len =  max_seq_len
 		self.trained_model1 = trained_model1
@@ -29,7 +29,7 @@ class MRC_EXTRACTION:
 		# <br> 처리 & ' 처리된 text
 		context=[ x for x in self.full_context.split('<br>') if x]
 		n_text=len(context)
-		n_token_query = len(self.tokenizer(self.query)['input_ids']) + 1
+		n_token_query = max([len(self.tokenizer(query)['input_ids']) for query in self.queries]) + 1
 
 		i=0
 		texts=[]
@@ -47,44 +47,48 @@ class MRC_EXTRACTION:
 	def passage_reranking(self):
 
 		texts = self.get_sep_passages()
-		scores = []
+		ranked_texts = {}
 
-		for text in texts: 
-			inputs = self.tokenizer.encode_plus(self.query, text, add_special_tokens=True, return_tensors="pt")
-			input_ids = inputs["input_ids"].tolist()[0]
-			score = self.model(**inputs)[0][0][1]
-			scores.append(score)
+		for query in self.queries:
+			scores = []
+			for text in texts: 
+				inputs = self.tokenizer.encode_plus(query, text, add_special_tokens=True, return_tensors="pt")
+				input_ids = inputs["input_ids"].tolist()[0]
+				score = self.model(**inputs)[0][0][1]
+				scores.append(score)
+			ranked_texts[query] = np.array(texts)[np.array(scores).argsort()[::-1]]
 
-		texts = np.array(texts)[np.array(scores).argsort()[::-1]]
-
-		return texts
+		return ranked_texts
 
 	# arg 형태 및 에러 관련 수정사항 추가할 것
 	# Model 2 
-	def get_answer(self, context):
+	def get_answer(self, query, context):
 
 		QA_input = {
-		'question': self.query,
+		'question': query,
 		'context': context
 		}
 		res = self.nlp(QA_input, model_max_length=self.max_seq_len) # max_question_len=64
-		return self.query, res['answer'], res['score']
+		return query, res['answer'], res['score']
 
 	def get_topN_answers(self, max_texts=3, n_answer=1):
 
 		texts = self.passage_reranking()
-		res={}
-		n_texts=len(texts)
+		n_texts=len(texts[list(texts.keys())[0]])
 
-		for i in range(min(n_texts, max_texts)):
-			result = self.get_answer(context=texts[i])
-			res[i] = (result[1], result[2])
-		res = sorted(res.items(), key=lambda x: x[1][1], reverse=True)
-		answers = [x[1][0] for x in res[:n_answer]] #candidates
-		if n_answer==1:
-			answers=answers[0]
+		qa_result={}
+		for query in self.queries:
+			res={}
+			for i in range(min(n_texts, max_texts)):
+				result = self.get_answer(query=query, context=texts[query][i])
+				res[i] = (result[1], result[2])
+			res = sorted(res.items(), key=lambda x: x[1][1], reverse=True)
+			answers = [x[1][0] for x in res[:n_answer]] #candidates
+			if n_answer==1:
+				answers=answers[0]
+			qa_result[query]=answers
+		return qa_result
 
-		return answers
 
 
 
