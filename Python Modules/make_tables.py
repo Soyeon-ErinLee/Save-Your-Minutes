@@ -21,7 +21,7 @@ def make_table_with_qa2(items=['Action Items','Person Responsible', 'Deadline'],
 
   num_act_items = 2 #모델 학습 후 query로 몇개인지 찾기
 
-  html_string = '<table class="table table-bordered"><tr>'
+  html_string = '<table class="table addel table-bordered" id="addel"><tr>'
 
   for item in items:
     html_string += '<td><strong>'+item+'</strong></td>'
@@ -41,6 +41,7 @@ def make_table_with_qa2(items=['Action Items','Person Responsible', 'Deadline'],
 
 
 # 각 Agenda table 생성용
+
 def make_table_with_agenda():
   num_agenda = 3 #모델 학습 후 query로 몇개의 agenda 존재하는지 찾기
 
