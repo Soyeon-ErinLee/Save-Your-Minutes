@@ -70,6 +70,7 @@ class make_tables:
 	# agenda의 두번째 table용
 	def make_table_mid_2(self, items=['Action Items','Person Responsible', 'Deadline']):
 
+
 	  html_string = '<table class="table addel table-bordered" id="addel"><tr>'
 
 	  for item in items:
@@ -93,12 +94,14 @@ class make_tables:
 
 	def make_table_final(self):
 
-	  html_string = make_table_top()
+	  html_string = ''
 	  for i in range(self.num_agenda):
 	    html_string += '<label><strong>Agenda '+str(i)+'</strong></label><table class="table table-bordered">'
 	    html_string+= make_table_top(items=['Presenter', 'Discussion topic', 'Conclusion'])# 이후 적절한 query로 수정
 	    html_string+=make_table_mid_2() # 수정
 	  return html_string
+
+
 
 
 
