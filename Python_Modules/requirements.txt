@@ -4,8 +4,7 @@ tensorflow==2.4.1
 transformers==3.3.0
 simpletransformers
 wget
-
-
+word2number
 
 
 
