@@ -69,7 +69,6 @@ class make_tables:
 		temp_df = pd.DataFrame(queries_dict)
 		self.answers_dict=temp_df.replace(answers_list).to_dict()
 		self.answers_dict['Date']=self.date
-		print(answers_list)
 		try: 
 			self.num_agendas=w2n.word_to_num(self.answers_dict['table_top']['num_agendas'])
 			self.num_act_items={}
