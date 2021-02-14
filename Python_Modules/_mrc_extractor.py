@@ -36,8 +36,10 @@ class FAQ_EXTRACTION(object):
         return
 
     def answer(self, type):
-
         # 각 타입마다 추출되는 mrc 값들 확인
+        pass
 
 
 class QNA_EXTRACTION(object):
+    def __init__(self):
+        pass
