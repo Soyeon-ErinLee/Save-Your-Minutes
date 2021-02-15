@@ -103,7 +103,7 @@ class make_tables:
 
 		if n_act_items==0:
 			return ''
-		html_string = '<table class="table addel table-bordered" id="adde'+str(n_agenda)+'"><tr>'
+		html_string = '<table class="table addel table-bordered" id="addel'+str(n_agenda)+'"><tr>'
 
 		for item in items:
 			html_string += '<td><strong>'+item+'</strong></td>'
@@ -114,7 +114,7 @@ class make_tables:
 			for item in items:
 				answer = '<td>'+self.answers_dict[loc+'_'+str(i)][item]+'</td>' 
 				html_string += answer
-			if i==n_act_items:
+			if i!=n_act_items:
 				html_string+='</tr><tr>'
 			else:     
 				html_string+='</tr>'
@@ -130,14 +130,15 @@ class make_tables:
 
 		html_string = self.make_table_top()
 		label = ''
-		if type=='PPC':  
+		if self.type=='PPC':  
 			label = 'Agenda'
 		for i in range(1, 1+self.num_agendas):
 			loc='table_main'+str(i)
 			html_string += '<label><strong>'+label+' '+str(i)+'</strong></label>'
 			html_string += self.make_table_top(items=['Presenter', 'Discussion Topic', 'Conclusion'], loc=loc)
 			html_string += self.make_table_mid(self.num_act_items[i], n_agenda=i, loc=loc) 
-		html_string += '<table class="table table-bordered"><tr><td><strong>Additional Notes</strong></td></tr><tr><td></td></tr></table>' 
+			html_string += '<table class="table table-bordered"><tr><td><strong>Additional Notes</strong></td></tr><tr><td></td></tr></table>' 
+
 		return html_string
 
 	def make_java(self):
@@ -147,7 +148,7 @@ class make_tables:
 		return java_string            
 
 
-	def get_table():
+	def get_table(self):
 		result_tb=self.make_table_final()
 		result_jv=self.make_java()
 		with open("Output.txt", "w") as text_file:
