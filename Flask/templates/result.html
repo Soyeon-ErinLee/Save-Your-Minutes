@@ -297,15 +297,15 @@
                                 <table class="table table-bordered">
                                     <tr>
                                         <td><strong>Topic</strong></td>
-                                        <td>KIC Project Progress Check 10th Meeting</td>
+                                        <td>KIC Project Progress Check</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Participants</strong></td>
-                                        <td>Erin, Steven, Sierra, Koo, Kim, and Jeon</td>
+                                        <td>Erin, Kim, Steven, Sierra, Koo, and Jeon.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Date</strong></td>
-                                        <td>2021-02-07</td>
+                                        <td>2021.02.14</td>
                                     </tr>
                                 </table>
                                 <label><strong>Agenda 1</strong></label>
@@ -316,32 +316,70 @@
                                     </tr>
                                     <tr>
                                         <td><strong>Discussion Topic</strong></td>
-                                        <td>What API we should use</td>
+                                        <td>what API we should use.</td>
                                     </tr>
                                     <tr>
                                         <td><strong>Conclusion</strong></td>
-                                        <td>Google and IBM works the best</td>
+                                        <td>Google and IBM works the best.</td>
                                     </tr>
                                 </table>
-                                <table class="table addel table-bordered" id="addel">
-
+                                <table class="table addel table-bordered" id="addel1">
                                     <tr>
-                                        <td><strong>Action Items</strong></td>
+                                        <td><strong>Action Item</strong></td>
                                         <td><strong>Person Responsible</strong></td>
                                         <td><strong>Deadline</strong></td>
                                     </tr>
                                     <tr>
-                                        <td>Evaluate Google Premium API</td>
+                                        <td>evaluate Google Premium API,</td>
                                         <td>Kim</td>
-                                        <td>Next week Wednesday</td>
+                                        <td>today</td>
                                     </tr>
                                     <tr>
-                                        <td>Confirm API and edit the code</td>
-                                        <td>Kim, Sierra</td>
-                                        <td>Next week Wednesday</td>
+                                        <td>to confirm API and edit the code,</td>
+                                        <td>Steven,</td>
+                                        <td>by the next meeting on the 12th.</td>
                                     </tr>
-                                    <input type="button" class="float" value="Add" id="addrow">
+                                    <input type="button" class="float" value="Add" id="addrow1"></table>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td><strong>Additional Notes</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                    </tr>
                                 </table>
+                                <label><strong>Agenda 2</strong></label>
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td><strong>Presenter</strong></td>
+                                        <td>Steven,</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Discussion Topic</strong></td>
+                                        <td>interface works,</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Conclusion</strong></td>
+                                        <td>Google and IBM works the best.</td>
+                                    </tr>
+                                </table>
+                                <table class="table addel table-bordered" id="addel2">
+                                    <tr>
+                                        <td><strong>Action Item</strong></td>
+                                        <td><strong>Person Responsible</strong></td>
+                                        <td><strong>Deadline</strong></td>
+                                    </tr>
+                                    <tr>
+                                        <td>evaluate Google Premium API,</td>
+                                        <td>Steven</td>
+                                        <td>today.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>confirm API and edit the code,</td>
+                                        <td>Steven</td>
+                                        <td>by the next meeting.</td>
+                                    </tr>
+                                    <input type="button" class="float" value="Add" id="addrow2"></table>
                                 <table class="table table-bordered">
                                     <tr>
                                         <td><strong>Additional Notes</strong></td>
@@ -372,7 +410,7 @@
                                                 <td></td>
                                             </tr>
                                         </table>
-                                        <table class="table table-bordered addel2" id="addel2">
+                                        <table class="table table-bordered addel" id="addel">
 
                                             <tr>
                                                 <td><strong>Action Items</strong></td>
@@ -389,7 +427,7 @@
                                                 <td></td>
                                                 <td></td>
                                             </tr>
-                                            <input type="button" class="float" value="Add" id="addrow2">
+                                            <input type="button" class="float" value="Add" id="addrow">
                                         </table>
                                         <table class="table table-bordered">
                                             <tr>
@@ -412,14 +450,15 @@
                         <button type="button" class="btn btn-save js-save" onclick="saveEdits2()">Save</button>
                         <button type="button" class="btn" id="export">Download</button>
 
-                        <button type="button" class="btn askai" id=askai onclick="toggler('ai');">Ask AI</button><br><br>
-                                <div class="ai" id="ai">
-                                    <input type="text" class="righta">
-                                    <input type="button" value="submit" class="btn btn-sm subsub rounded"
-                                           onclick="toggler('sugans')">
-                                    <br><br>
-                                    <div id="sugans" class="sugans">Suggested Answer</div>
-                                </div>
+                        <button type="button" class="btn askai" id=askai onclick="toggler('ai');">Ask AI</button>
+                        <br><br>
+                        <div class="ai" id="ai">
+                            <input type="text" class="righta">
+                            <input type="button" value="submit" class="btn btn-sm subsub rounded"
+                                   onclick="toggler('sugans')">
+                            <br><br>
+                            <div id="sugans" class="sugans">Suggested Answer</div>
+                        </div>
                     </form>
                 </div>
                 <!--Grid column-->
@@ -569,14 +608,6 @@
     });
 
     $(document).ready(function () {
-        var tbody = $('#addel2').children('tbody');
-        var table = tbody.length ? tbody : $('#addel2');
-        $('#addrow2').click(function () {
-            table.append('<tr><td></td><td></td><td></td></tr>');
-        })
-    });
-
-    $(document).ready(function () {
         $('.js-edit, .js-save').on('click', function () {
             var $form = $(this).closest('form');
             $form.toggleClass('is-readonly is-editing');
@@ -653,9 +684,21 @@
         $("#" + divId).toggle();
     }
 
-
 </script>
+<script>   $(document).ready(function () {
+    var tbody = $("#addel1").children("tbody");
+    var table = tbody.length ? tbody : $("#addel1");
+    $("#addrow1").click(function () {
+        table.append("<tr><td></td><td></td><td></td></tr>");
+    })
+});</script>
+<script>   $(document).ready(function () {
+    var tbody = $("#addel2").children("tbody");
+    var table = tbody.length ? tbody : $("#addel2");
+    $("#addrow2").click(function () {
+        table.append("<tr><td></td><td></td><td></td></tr>");
+    })
+});</script>
 </body>
-
 </html>
 <!--document.forms["txt"].submit();-->
