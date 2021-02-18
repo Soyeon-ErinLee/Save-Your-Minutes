@@ -27,9 +27,9 @@ class TRANSCRIBER:
     def _init_transcribe(self):
         self.transcribe = boto3.client('transcribe')
 
-    def _upload(self, stream, filename):
+    def _upload(self, path, filename):
         self.filename = filename
-        self.s3.Bucket(self.bucket_name).upload_fileobj(stream, filename)
+        self.s3.Bucket(self.bucket_name).upload_file(path, filename)
 
     def transcribe(self, num_speakers):
         job_name = self.filename
