@@ -31,7 +31,7 @@ class TRANSCRIBER:
         self.filename = filename
         self.s3.Bucket(self.bucket_name).upload_fileobj(stream, filename)
 
-    def _transcribe(self, num_speakers):
+    def transcribe(self, num_speakers):
         job_name = self.filename
         format = Path(self.filename).suffix[1:]
         job_uri = (

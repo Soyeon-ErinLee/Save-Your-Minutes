@@ -8,6 +8,9 @@ import pandas as pd
 import json
 import urllib
 import sys
+import warnings
+warnings.filterwarnings("ignore")
+from _transriber import TRANSCRIBER
 
 class STT_TRANSFORMER(object):
 
@@ -23,38 +26,13 @@ class STT_TRANSFORMER(object):
     >>> 구체적 사용법 제시
     '''
 
-    def __init__(self, json):
+    def __init__(self, stream, filename, num_speaker):
         assert type(json) is str, print('json path must be str.')
 
-        self.path = json
-        self.data = self._load_json()
+        self.filename = filename
+        self.data = transcribe(num_speaker)
         self.level1 = self._extraction()[0]
         self.info = self._extraction()[1]
-
-
-    def _load_json(self):
-        ##### AWS 클라우드에 접근 후, html 형식으로 올라간 json 파일을 그대로 크롤링하여 읽어들이는 코드로 수정 예정 ###
-
-        if sys.version_info[0] == 3:
-            from urllib.request import urlopen  # for Python 3.x
-
-        else:
-            from urllib import urlopen  # for Python 2.x
-
-        with urlopen(self.path) as url:
-
-            pre_data = url.read()
-            data = json.loads(pre_data.decode('utf-8'))
-
-        return data
-
-        '''        
-        
-        with open(self.path) as jsonfile:
-            data = json.load(jsonfile)
-        return data
-        
-        '''
 
 
     def _html_tagger(self, string, tag):
@@ -166,7 +144,7 @@ class STT_TRANSFORMER(object):
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
-            start_time_temp = df.iloc[i, 1] # 분단위 데이터 확인 후 코드 수정 예정
+            start_time_temp = (df.iloc[i, 1])//60 + ':' + (df.iloc[i, 1])%60 # 분단위 데이터 확인 후 코드 수정 예정
             text_temp = df.iloc[i, -1]
             print(speaker_temp, start_time, text_temp)
 
@@ -184,6 +162,8 @@ class STT_TRANSFORMER(object):
 
     def model_transformer(self):
 
+
+
         df = self.parsing()
 
         return
@@ -194,11 +174,3 @@ class STT_TRANSFORMER(object):
         # text 파일이나 excel 등으로 볼 수 있게 내보내는 과정
 
         return
-
-
-class MRC_TRANSFORMER(object):
-
-    def __init__(self, data, type):
-
-    def
-
