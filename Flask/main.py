@@ -33,9 +33,10 @@ def upload():
     if request.method == 'POST':
         f = request.files.get('file')
         filename = secure_filename(f.filename)
-        f.save(os.path.join(upload_dir, filename))
+        file_path = os.path.join(upload_dir, filename)
+        f.save(file_path)
         session['audio_file_name'] = filename
-        #transcriber._upload(f, filename)
+        transcriber._upload(file_path, filename)
     return render_template('homepage.html')
 
 @app.route("/result", methods = ['GET', 'POST'])
