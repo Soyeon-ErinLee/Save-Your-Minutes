@@ -225,8 +225,7 @@
             <hr class="mb-3">
             <div class="container-audio mb-3">
                 <audio controls loop>
-                    <source src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/Lovesick%20Girls.mp3"
-                            type="audio/mp3">
+                    <source src="{{url_for('static', filename = path)}}" type={{file_type}}>
                     Your browser dose not Support the audio Tag
                 </audio>
             </div>
