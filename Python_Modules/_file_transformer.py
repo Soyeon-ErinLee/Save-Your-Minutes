@@ -14,26 +14,13 @@ from _transriber import TRANSCRIBER
 
 class STT_TRANSFORMER(object):
 
-    '''To parse json file data from STT processing
-
-    Example
-    -------
-    >>> import sys
-    >>> sys.path.append('######')
-    >>> ## 사용방법
-
-    >>> json_path = ## AWS에서 해당 위치 지정
-    >>> 구체적 사용법 제시
-    '''
-
     def __init__(self, stream, filename, num_speaker):
         assert type(json) is str, print('json path must be str.')
 
         self.filename = filename
-        self.data = transcribe(num_speaker)
+        self.data = TRANSCRIBER(filename).transcribe(num_speaker) ### 이부분 민찬 확인 부탁
         self.level1 = self._extraction()[0]
         self.info = self._extraction()[1]
-
 
     def _html_tagger(self, string, tag):
 
