@@ -14,17 +14,6 @@ from _transriber import TRANSCRIBER
 
 class STT_TRANSFORMER(object):
 
-    '''To parse json file data from STT processing
-
-    Example
-    -------
-    >>> import sys
-    >>> sys.path.append('######')
-    >>> ## 사용방법
-
-    >>> json_path = ## AWS에서 해당 위치 지정
-    >>> 구체적 사용법 제시
-    '''
 
     def __init__(self, stream, filename, num_speaker):
         assert type(json) is str, print('json path must be str.')
@@ -34,14 +23,12 @@ class STT_TRANSFORMER(object):
         self.level1 = self._extraction()[0]
         self.info = self._extraction()[1]
 
-
     def _html_tagger(self, string, tag):
 
         assert type(string) is str, print("text input must be string.")
         assert type(string) is str, print("tag input must be string.")
 
         ''' 
-
         tag information
         --------------------------------------------------------
         1. start : we add "<strong>" at the front part of input, which contains start time and speaker information
@@ -89,7 +76,6 @@ class STT_TRANSFORMER(object):
             s = script['start_time']
             e = script['end_time']
             l = script['speaker_label']
-            print(s, e, l)
             df = df.append([(l, s, e)], ignore_index=False)
         df.columns = ['speaker', 'start_time', 'end_time']
 
@@ -113,7 +99,6 @@ class STT_TRANSFORMER(object):
         for i in range(len(num_list) - 1):
             start_row = num_list[i]
             next_row = num_list[i + 1]
-            print(start_row, next_row)
             string = ''
 
             for script in range(start_row, next_row):
@@ -144,9 +129,16 @@ class STT_TRANSFORMER(object):
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
-            start_time_temp = (df.iloc[i, 1])//60 + ':' + (df.iloc[i, 1])%60 # 분단위 데이터 확인 후 코드 수정 예정
+            time_minute = str(int(float(df.iloc[i, 1])//60))
+            time_second = str(int(float(df.iloc[i, 1])%60))
+            if len(time_minute) == 1:
+                time_minute = '0'+time_minute
+
+            if len(time_second) == 1:
+                time_second = '0'+time_second
+
+            start_time = time_minute + ':' + time_second # 분단위 데이터 확인 후 코드 수정 예정
             text_temp = df.iloc[i, -1]
-            print(speaker_temp, start_time, text_temp)
 
             speaker = self._html_tagger(speaker_temp, 'start')
             text = self._html_tagger(text_temp, 'middle')
@@ -156,9 +148,6 @@ class STT_TRANSFORMER(object):
             html_string += new_string
 
         return html_string
-
-    # 각 자료를 파일로 저장하여 AWS 클라우드로 연결하는 file_connector 모듈 따로 제작 예정
-
 
     def model_transformer(self):
 
