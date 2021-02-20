@@ -1,16 +1,15 @@
-#!/usr/bin/python --> 이거 민찬이가 환경에 적합한 형태로 변경해주세요
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Written by Ju Yeon Lee. justforher12344@gmail.com
-# Co-worker: Min Chan Kim.
 
 import pandas as pd
 import json
 import urllib
 import sys
 import warnings
-warnings.filterwarnings("ignore")
 from _transriber import Transcriber
+warnings.filterwarnings("ignore")
 
 
 class SttTransformer(object):
@@ -123,7 +122,7 @@ class SttTransformer(object):
 
         df = self.parsing()
         html_string = ''
-        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1])+1)
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]+1))
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
@@ -147,16 +146,24 @@ class SttTransformer(object):
 
         return html_string
 
-    def model_transformer(self):  # 지현님께서 주신 걸로 바꾸기.
-
-
+    def model_transformer(self, time):  # 지현님께서 주신 걸로 바꾸기.
+        time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
 
         df = self.parsing()
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]) + 1)
+        model_string = str(time) + '\n'
 
-        return
+        for i in range(len(df)):
+            speaker = 'Speaker' + str(df.iloc[i, 0])
+            text = str(df.iloc[i, -1])
+            model_string = model_string + speaker + ': ' + text + '\n'
+
+        return model_string
 
 
-    def file_export(self):
+    def _file_export(self):
+
+        pass
 
         # text 파일이나 excel 등으로 볼 수 있게 내보내는 과정
 
