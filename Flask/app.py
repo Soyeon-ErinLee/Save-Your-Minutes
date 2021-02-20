@@ -37,6 +37,22 @@ def result():
         f = request.files.get('file')
         f.save(os.path.join(upload_dir, f.filename))
     return render_template('result.html')
+
+
+@app.route("/result_interview", methods=['GET', 'POST'])
+def result1():
+    if request.method == 'POST':
+        f = request.files.get('file')
+        f.save(os.path.join(upload_dir, f.filename))
+    return render_template('result1.html')
+
+
+@app.route("/result_idea", methods=['GET', 'POST'])
+def result2():
+    if request.method == 'POST':
+        f = request.files.get('file')
+        f.save(os.path.join(upload_dir, f.filename))
+    return render_template('result2.html')
 ##############################################################################
 
 
