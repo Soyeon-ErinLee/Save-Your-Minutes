@@ -5,6 +5,7 @@ from flask_dropzone import Dropzone
 from werkzeug.utils import secure_filename
 import os
 import sys
+import time
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
