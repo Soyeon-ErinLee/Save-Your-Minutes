@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib import request
 
 
-class TRANSCRIBER:
+class Transcriber:
     def __init__(self):
         self._init_s3()
         self._init_transcribe() 
@@ -27,7 +27,7 @@ class TRANSCRIBER:
     def _init_transcribe(self):
         self.transcribe = boto3.client('transcribe')
 
-    def _upload(self, stream, filename):
+    def upload(self, stream, filename):
         self.filename = filename
         self.s3.Bucket(self.bucket_name).upload_fileobj(stream, filename)
 
