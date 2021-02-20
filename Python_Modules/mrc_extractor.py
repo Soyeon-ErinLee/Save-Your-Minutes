@@ -8,7 +8,7 @@ class MRC_EXTRACTION:
 
 	def __init__(self, queries, full_context, max_seq_len=512, \
               trained_model1="amberoad/bert-multilingual-passage-reranking-msmarco", \
-              trained_model2="ahotrod/electra_large_discriminator_squad2_512"):
+              trained_model2="superspray/electra_large_discriminator_squad2_custom_dataset"):
 		self.queries = queries
 		self.full_context = full_context
 		self.max_seq_len =  max_seq_len

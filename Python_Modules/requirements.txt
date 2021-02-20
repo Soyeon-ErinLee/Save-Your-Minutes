@@ -1,7 +1,7 @@
 ﻿# pip install -r requirements.txt
 
 tensorflow==2.4.1          
-transformers==3.3.0
+transformers==4.0.1
 simpletransformers
 wget
 word2number
