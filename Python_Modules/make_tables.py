@@ -9,7 +9,7 @@ from word2number import w2n
 
 
 #질문 부분 수정
-class make_tables:
+class MAKE_TABLES:
 
 	def __init__(self, queries_dict, full_context, types='Agenda'):
 		self.date = full_context[:10] 
