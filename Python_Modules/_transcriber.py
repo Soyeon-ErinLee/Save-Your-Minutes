@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib import request
 
 
-class Transcriber:
+class TRANSCRIBER:
     def __init__(self):
         self._init_s3()
         self._init_transcribe() 
