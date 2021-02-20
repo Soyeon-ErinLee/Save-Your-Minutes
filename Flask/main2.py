@@ -36,7 +36,10 @@ def upload():
         file_path = os.path.join(upload_dir, filename)
         f.save(file_path)
         session['audio_file_name'] = filename
-        transcriber._upload(file_path, filename)
+        transcriber.upload(file_path, filename)
+        data = transcriber.transribe(num_speaker) # have to check (after merging)
+        front = SttTransformer(data).html_transfomer() # front value (to Soyeon)
+        model = SttTransformer(data).model_transfomer(time) # input value for model (to Jihyeon)
     return render_template('homepage.html')
 
 @app.route("/result", methods = ['GET', 'POST'])
