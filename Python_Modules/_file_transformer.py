@@ -8,6 +8,7 @@ import json
 import urllib
 import sys
 import warnings
+from _transriber import Transcriber
 warnings.filterwarnings("ignore")
 
 
@@ -146,7 +147,6 @@ class SttTransformer(object):
         return html_string
 
     def model_transformer(self, time):  # 지현님께서 주신 걸로 바꾸기.
-        time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
 
         df = self.parsing()
         df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]) + 1)

@@ -28,6 +28,8 @@ transcriber = TRANSCRIBER()
 
 @app.route("/", methods = ['GET', 'POST'])
 def upload():
+    time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
+
     if 'audio_file_name' not in session:
         session['audio_file_name'] = None
     if request.method == 'POST':
