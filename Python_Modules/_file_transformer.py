@@ -8,7 +8,6 @@ import json
 import urllib
 import sys
 import warnings
-from _transriber import Transcriber
 warnings.filterwarnings("ignore")
 
 
