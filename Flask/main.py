@@ -11,7 +11,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 upload_dir = os.path.join(basedir, 'uploads')
 output_dir = os.path.join(basedir, 'output')
 sys.path.append(os.path.join(os.path.dirname(basedir), 'Python_Modules'))
-from _transcriber import TRANSCRIBER
+from _transcriber import Transcriber
 
 app = Flask(__name__)
 app.debug = True
@@ -30,8 +30,11 @@ def upload():
     if request.method == 'POST':
         f = request.files.get('file')
         filename = secure_filename(f.filename)
-        transcriber._upload(f, filename)
-    return render_template('homepage.html')
+        transcriber._upload(file_path, filename)
+        data = transcriber.transribe(num_speaker) # have to check (after merging)
+        front = SttTransformer(data).html_transfomer() # front value (to Soyeon)
+        model = SttTransformer(data).model_transfomer() # input value for model (to Jihyeon)
+    return render_template('homepage.html')  # 홈페이지를 나타내기 위한 파일.
 
 @app.route("/result", methods=['GET', 'POST'])
 def result():

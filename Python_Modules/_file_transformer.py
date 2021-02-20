@@ -10,16 +10,14 @@ import urllib
 import sys
 import warnings
 warnings.filterwarnings("ignore")
-from _transriber import TRANSCRIBER
-
-class STT_TRANSFORMER(object):
+from _transriber import Transcriber
 
 
-    def __init__(self, stream, filename, num_speaker):
-        assert type(json) is str, print('json path must be str.')
+class SttTransformer(object):
 
-        self.filename = filename
-        self.data = transcribe(num_speaker)
+    def __init__(self, data):
+
+        self.data = data
         self.level1 = self._extraction()[0]
         self.info = self._extraction()[1]
 
@@ -149,7 +147,7 @@ class STT_TRANSFORMER(object):
 
         return html_string
 
-    def model_transformer(self):
+    def model_transformer(self):  # 지현님께서 주신 걸로 바꾸기.
 
 
 

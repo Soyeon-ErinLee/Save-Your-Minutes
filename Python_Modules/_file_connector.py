@@ -9,13 +9,36 @@ import re
 import pandas as pd
 import json
 import requests
+from _file_transformer import SttTransformer
+from _transcriber import Transcriber
+
+'''
+path1 = audio file path 
+
+Transcriber()
+SttTransformer()
+
+path2 = text file path 
+
+flask 
+
+'''
 
 
-'''받은 데이터를 기반으로, AWS 클라우드 혹은 target 클라우드 주소에 파일을 생성하는 과정'''
+class Connector():
+
+    def __init__(self):
+        self.path = file
 
 
-def make_file(self, data):
-    pass
+    def make_file(self, path):
+
+        assert type(path) is str, print("text input must be string.")
+
+        file = open(path, 'w')  # hello.txt 파일을 쓰기 모드(w)로 열기. 파일 객체 반환
+        file.write(html_string)  # 파일에 문자열 저장
+        file.close()
+        pass
 
 
 
@@ -23,26 +46,6 @@ def to_front(self):
 
     ### front-end로 연결되는 특정 주소로 export 되게 할 것 ###
 
-
-    from google.cloud import storage
-
-    def upload_blob(bucket_name, source_file_name, destination_blob_name):
-        """Uploads a file to the bucket."""
-        # bucket_name = "your-bucket-name"
-        # source_file_name = "local/path/to/file"
-        # destination_blob_name = "storage-object-name"
-
-        storage_client = storage.Client()
-        bucket = storage_client.bucket(bucket_name)
-        blob = bucket.blob(destination_blob_name)
-
-        blob.upload_from_filename(source_file_name)
-
-        print(
-            "File {} uploaded to {}.".format(
-                source_file_name, destination_blob_name
-            )
-        )
 
     return
 
