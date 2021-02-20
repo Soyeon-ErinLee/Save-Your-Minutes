@@ -29,7 +29,7 @@ transcriber = TRANSCRIBER()
 @app.route("/", methods = ['GET', 'POST'])
 def upload():
     if 'audio_file_name' not in session:
-        session['audio_file_name'] = None
+        session['audio_file_name'] = '.'
     if request.method == 'POST':
         f = request.files.get('file')
         filename = secure_filename(f.filename)
@@ -41,17 +41,40 @@ def upload():
 
 @app.route("/result", methods = ['GET', 'POST'])
 def result():
-    audio_file_name = session['audio_file_name']
-    session.pop('audio_file_name', None)
+    path, file_type = insert_audio()
     if request.method == 'POST':
         f = request.files.get('file')
         f.save(os.path.join(upload_dir, f.filename))
     return render_template(
-        'result.html', 
-        path = ('uploads/' + audio_file_name),
-        file_type = ('audio/' + audio_file_name.rsplit('.')[-1])
+        'result.html', path = path, file_type = file_type
     )
 
+@app.route("/result_interview", methods=['GET', 'POST'])
+def result1():
+    path, file_type = insert_audio()
+    if request.method == 'POST':
+        f = request.files.get('file')
+        f.save(os.path.join(upload_dir, f.filename))
+    return render_template(
+        'result1.html', path = path, file_type = file_type
+    )
+
+@app.route("/result_idea", methods=['GET', 'POST'])
+def result2():
+    path, file_type = insert_audio()
+    if request.method == 'POST':
+        f = request.files.get('file')
+        f.save(os.path.join(upload_dir, f.filename))
+    return render_template(
+        'result2.html', path = path, file_type = file_type
+    )
+
+def insert_audio():
+    audio_file_name = session['audio_file_name']
+    session.pop('audio_file_name', None)
+    path = 'uploads/' + audio_file_name
+    file_type = 'audio/' + audio_file_name.rsplit('.')[-1]
+    return path, file_type
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0')
