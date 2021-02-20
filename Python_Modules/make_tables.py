@@ -140,11 +140,22 @@ class MAKE_TABLES:
 
 
 	def get_table(self):
+		
 		result_tb=self.make_table_final()
 		result_jv=self.make_java()
+
 		with open("Output.txt", "w") as text_file:
 			text_file.write(result_tb)
-		with open("javascript.txt", "w") as text_file:
-			text_file.write(result_jv)
+
+		if self.types=='Agenda':
+			with open("javascript.txt", "w") as text_file:
+				text_file.write(result_jv)
+		
 		return result_tb, result_jv
+
+
+
+
+if __name__ == "__main__":
+	main()
 
