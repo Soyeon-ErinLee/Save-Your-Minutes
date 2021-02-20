@@ -1,8 +1,7 @@
-#!/usr/bin/python --> 이거 민찬이가 환경에 적합한 형태로 변경해주세요
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
 
 # Written by Ju Yeon Lee. justforher12344@gmail.com
-# Co-worker: Min Chan Kim.
 
 import pandas as pd
 import json
@@ -10,15 +9,13 @@ import urllib
 import sys
 import warnings
 warnings.filterwarnings("ignore")
-from _transriber import TRANSCRIBER
 
-class STT_TRANSFORMER(object):
 
-    def __init__(self, stream, filename, num_speaker):
-        assert type(json) is str, print('json path must be str.')
+class SttTransformer(object):
 
-        self.filename = filename
-        self.data = TRANSCRIBER(filename).transcribe(num_speaker) ### 이부분 민찬 확인 부탁
+    def __init__(self, data):
+
+        self.data = data
         self.level1 = self._extraction()[0]
         self.info = self._extraction()[1]
 
@@ -28,7 +25,6 @@ class STT_TRANSFORMER(object):
         assert type(string) is str, print("tag input must be string.")
 
         ''' 
-
         tag information
         --------------------------------------------------------
         1. start : we add "<strong>" at the front part of input, which contains start time and speaker information
@@ -76,7 +72,6 @@ class STT_TRANSFORMER(object):
             s = script['start_time']
             e = script['end_time']
             l = script['speaker_label']
-            print(s, e, l)
             df = df.append([(l, s, e)], ignore_index=False)
         df.columns = ['speaker', 'start_time', 'end_time']
 
@@ -100,7 +95,6 @@ class STT_TRANSFORMER(object):
         for i in range(len(num_list) - 1):
             start_row = num_list[i]
             next_row = num_list[i + 1]
-            print(start_row, next_row)
             string = ''
 
             for script in range(start_row, next_row):
@@ -127,13 +121,20 @@ class STT_TRANSFORMER(object):
 
         df = self.parsing()
         html_string = ''
-        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1])+1)
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]+1))
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
-            start_time_temp = (df.iloc[i, 1])//60 + ':' + (df.iloc[i, 1])%60 # 분단위 데이터 확인 후 코드 수정 예정
+            time_minute = str(int(float(df.iloc[i, 1])//60))
+            time_second = str(int(float(df.iloc[i, 1])%60))
+            if len(time_minute) == 1:
+                time_minute = '0'+time_minute
+
+            if len(time_second) == 1:
+                time_second = '0'+time_second
+
+            start_time = time_minute + ':' + time_second # 분단위 데이터 확인 후 코드 수정 예정
             text_temp = df.iloc[i, -1]
-            print(speaker_temp, start_time, text_temp)
 
             speaker = self._html_tagger(speaker_temp, 'start')
             text = self._html_tagger(text_temp, 'middle')
@@ -144,19 +145,24 @@ class STT_TRANSFORMER(object):
 
         return html_string
 
-    # 각 자료를 파일로 저장하여 AWS 클라우드로 연결하는 file_connector 모듈 따로 제작 예정
-
-
-    def model_transformer(self):
-
-
+    def model_transformer(self, time):  # 지현님께서 주신 걸로 바꾸기.
+        time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
 
         df = self.parsing()
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]) + 1)
+        model_string = str(time) + '\n'
 
-        return
+        for i in range(len(df)):
+            speaker = 'Speaker' + str(df.iloc[i, 0])
+            text = str(df.iloc[i, -1])
+            model_string = model_string + speaker + ': ' + text + '\n'
+
+        return model_string
 
 
-    def file_export(self):
+    def _file_export(self):
+
+        pass
 
         # text 파일이나 excel 등으로 볼 수 있게 내보내는 과정
 
