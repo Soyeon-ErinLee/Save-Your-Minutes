@@ -47,10 +47,58 @@ query_dict_ex={'table_top': {
 }
 
 
+query_dict_ex_idea={'table_top': {
+	'Participants':'who are the attendees at the meeting?',
+	'Topic':'what was the main topic of the meeting?',
+    'num_agendas':'How many ideas discussed?',
+ },
+  'table_main1': {
+    'Idea 1':'what was the first idea?'
+ },
+  'table_main1_1':{
+	'quest1':'what can be advantage of the first idea?',
+	'quest2': 'what is the problem of the first idea?',
+	'quest3':'what can be the possible solution for the first  idea?'
+ },
+  'table_main2': {
+    'Idea 1':'what was the second idea?'
+ },
+   'table_main2_1':{
+	'quest1':'what can be advantage of the first idea?',
+	'quest2': 'what is the problem of the first idea?'
+ }
+}
+
+
+query_dict_ex_idea={'table_top': {
+	'Interviewer':'who are the Interviewer?',
+	'Interviewee':'who are the Interviewee?',
+	'Topic':'what was the main topic of the meeting?',
+    'num_agendas':'How many Subjects discussed?',
+ },
+  'table_main1': {
+    'Idea 1':'what was the first subject?'
+ },
+  'table_main1_1':{
+	'quest1':'what can be advantage of the first idea?',
+	'quest2': 'what is the problem of the first idea?',
+	'quest3':'what can be the possible solution for the first  idea?'
+ },
+  'table_main2': {
+    'Idea 1':'what was the second idea?'
+ },
+   'table_main2_1':{
+	'quest1':'what can be advantage of the first idea?',
+	'quest2': 'what is the problem of the first idea?'
+ }
+}
+
+
+
 #질문 부분 수정
 class make_tables:
 
-	def __init__(self, queries_dict, full_context, type='PPC'):
+	def __init__(self, queries_dict, full_context, type='Agenda'):
 		self.date = full_context[:10] 
 		self.full_context =  full_context[22:]
 		self.type=type
@@ -79,7 +127,8 @@ class make_tables:
 
 
 	# 회의록 공통 질문 및 agenda 내 첫번째 table용
-	def make_table_top(self, items=['Topic','Participants', 'Date'], loc='table_top'):
+	def make_table_top(self, items=['Topic','Participants', 'Date'], loc='table_top', type=self.type):
+
 
 		html_string = '<table class="table table-bordered">'
 
@@ -94,15 +143,15 @@ class make_tables:
 			html_string+=answer_str
 
 		html_string+='</table>'
-
 		return html_string
 
 
 	# agenda의 두번째 table용
-	def make_table_mid(self, n_act_items=0,items=['Action Item','Person Responsible', 'Deadline'], n_agenda=1 ,loc='table_main1'):
+	def make_table_mid(self, n_act_items=0,items=['Action Item','Person Responsible', 'Deadline'], n_agenda=1 ,loc='table_main1', type='Agenda'):
 
 		if n_act_items==0:
 			return ''
+
 		html_string = '<table class="table addel table-bordered" id="addel'+str(n_agenda)+'"><tr>'
 
 		for item in items:
@@ -110,16 +159,26 @@ class make_tables:
 
 		html_string+='</tr><tr>'
 
-		for i in range(1,1+n_act_items):
-			for item in items:
-				answer = '<td>'+self.answers_dict[loc+'_'+str(i)][item]+'</td>' 
-				html_string += answer
-			if i!=n_act_items:
-				html_string+='</tr><tr>'
-			else:     
-				html_string+='</tr>'
+		if type=='Agenda'
+			for i in range(1,1+n_act_items):
+				for item in items:
+					answer = '<td>'+self.answers_dict[loc+'_'+str(i)][item]+'</td>' 
+					html_string += answer
+				if i!=n_act_items:
+					html_string+='</tr><tr>'
+				else:     
+					html_string+='</tr>'
 
-		html_string+='<input type="button" class="float" value="Add" id="addrow'+str(n_agenda)+'"></table>'
+			html_string+='<input type="button" class="float" value="Add" id="addrow'+str(n_agenda)+'"></table>'
+
+		else:
+			html_string += '<td>'
+			answer=''
+			for item in self.answers_dict[loc+'_1'].keys():
+				answer+='&#9642; '+self.answers_dict[loc+'_1'][item] +'<br>'
+			html_string += answer[:-4]
+
+			html_string += '</td></tr><tr><td><strong>Comments</strong></td></tr><tr><td></tr></table><br></div>'
 
 		return html_string
 
@@ -128,16 +187,34 @@ class make_tables:
 
 	def make_table_final(self):
 
-		html_string = self.make_table_top()
 		label = ''
-		if self.type=='PPC':  
+		if self.type=='Agenda':  
 			label = 'Agenda'
-		for i in range(1, 1+self.num_agendas):
-			loc='table_main'+str(i)
-			html_string += '<label><strong>'+label+' '+str(i)+'</strong></label>'
-			html_string += self.make_table_top(items=['Presenter', 'Discussion Topic', 'Conclusion'], loc=loc)
-			html_string += self.make_table_mid(self.num_act_items[i], n_agenda=i, loc=loc) 
-			html_string += '<table class="table table-bordered"><tr><td><strong>Additional Notes</strong></td></tr><tr><td></td></tr></table>' 
+			html_string = self.make_table_top()
+			for i in range(1, 1+self.num_agendas):
+				loc='table_main'+str(i)
+				html_string += '<label><strong>'+label+' '+str(i)+'</strong></label> <div class="form-group2">'
+				html_string += self.make_table_top(items=['Presenter', 'Discussion Topic', 'Conclusion'], loc=loc)
+				html_string += self.make_table_mid(self.num_act_items[i], n_agenda=i, loc=loc) 
+				html_string += '<table class="table table-bordered"><tr><td><strong>Additional Notes</strong></td></tr><tr><td></td></tr></table></div>' 
+
+		elif self.type=='Idea'
+			label = 'Idea '
+			html_string = self.make_table_top()
+			for i in range(1, 1+self.num_agendas):
+				loc='table_main'+str(i)
+				html_string += '<label><strong>Idea Discussion Summary</strong></label> <div class="form-group2">'
+				html_string += self.make_table_top(items=[label+str(i)], loc=loc)
+				html_string += self.make_table_mid(num_act_items=1, n_agenda=i, items=['Details'], loc=loc, type='Idea') 
+
+		elif self.type=='Interview'
+			label = 'Subject '
+			html_string = self.make_table_top(items=['Topic','Interviewer', 'Interviewee','Date'])
+			for i in range(1, 1+self.num_agendas):
+				loc='table_main'+str(i)
+				html_string += '<label><strong>Interview Summary</strong></label> <div class="form-group2">'
+				html_string += self.make_table_top(items=[label+str(i)], loc=loc)
+				html_string += self.make_table_mid(num_act_items=1, n_agenda=i, items=['Details'], loc=loc, type='Interview') 
 
 		return html_string
 
