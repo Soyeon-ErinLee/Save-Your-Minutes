@@ -144,7 +144,7 @@ class MAKE_TABLES:
 		result_tb=self.make_table_final()
 		result_jv=self.make_java()
 
-		with open("Output.html", "w") as text_file:
+		with open("Output.txt", "w") as text_file:
 			text_file.write(result_tb)
 
 		if self.types=='Agenda':
