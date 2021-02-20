@@ -146,16 +146,15 @@ class SttTransformer(object):
         return html_string
 
     def model_transformer(self, time):  # 지현님께서 주신 걸로 바꾸기.
-        time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
 
         df = self.parsing()
         df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]) + 1)
-        model_string = str(time) + '\n'
+        model_string = str(time) + ' <br> '
 
         for i in range(len(df)):
             speaker = 'Speaker' + str(df.iloc[i, 0])
             text = str(df.iloc[i, -1])
-            model_string = model_string + speaker + ': ' + text + '\n'
+            model_string = model_string + ' <br> ' + speaker + ': ' + text
 
         return model_string
 
