@@ -1,5 +1,3 @@
-#queries 로 변경 
-
 import numpy as np
 import warnings
 warnings.filterwarnings("ignore")
@@ -10,9 +8,8 @@ class MRC_EXTRACTION:
 
 	def __init__(self, queries, full_context, max_seq_len=512, \
               trained_model1="amberoad/bert-multilingual-passage-reranking-msmarco", \
-              trained_model2="ahotrod/electra_large_discriminator_squad2_512"):
+              trained_model2="superspray/electra_large_discriminator_squad2_custom_dataset"):
 		self.queries = queries
-		#self.query = query
 		self.full_context = full_context
 		self.max_seq_len =  max_seq_len
 		self.trained_model1 = trained_model1
@@ -20,8 +17,6 @@ class MRC_EXTRACTION:
 		self.tokenizer = AutoTokenizer.from_pretrained(self.trained_model1)
 		self.model = AutoModelForSequenceClassification.from_pretrained(self.trained_model1)
 		self.model_name = self.trained_model2
-				#deepset/electra-base-squad2 
-				#twmkn9/distilbert-base-uncased-squad2
 		self.nlp = pipeline('question-answering', model=self.model_name, tokenizer=self.model_name)
 
 
@@ -60,7 +55,6 @@ class MRC_EXTRACTION:
 
 		return ranked_texts
 
-	# arg 형태 및 에러 관련 수정사항 추가할 것
 	# Model 2 
 	def get_answer(self, query, context):
 
@@ -88,8 +82,6 @@ class MRC_EXTRACTION:
 				answers=answers[0]
 			qa_result[query]=answers
 		return qa_result
-
-
 
 
 if __name__ == "__main__":

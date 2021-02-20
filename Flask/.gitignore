@@ -1,3 +1,5 @@
 uploads/
 output/
+static/uploads/
+config.py
 test*.py

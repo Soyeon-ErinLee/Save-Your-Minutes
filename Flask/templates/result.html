@@ -35,10 +35,6 @@
             display: none;
         }
 
-        .form-group2 {
-            display: none;
-        }
-
         .sugans {
             display: none;
         }
@@ -95,6 +91,27 @@
         #iframe {
             display: none;
         }
+
+        #loading {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: block;
+            opacity: 0.7;
+            background-color: #fff;
+            z-index: 99;
+            text-align: center;
+        }
+
+        #loading-image {
+            position: absolute;
+            top: 350px;
+            left: 700px;
+            z-index: 100;
+        }
+
 
         #myBtn {
             display: none; /* Hidden by default */
@@ -157,7 +174,9 @@
 </head>
 
 <body>
-
+<div id="loading">
+    <img id="loading-image" src="../static/img/ajax-loader.gif" alt="Loading..."/>
+</div>
 <!-- Navbar -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark navbar-custom scrolling-navbar">
     <div class="container">
@@ -225,8 +244,7 @@
             <hr class="mb-3">
             <div class="container-audio mb-3">
                 <audio controls loop>
-                    <source src="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/Lovesick%20Girls.mp3"
-                            type="audio/mp3">
+                    <source src="{{ url_for('static', filename = path) }}" type={{ file_type }}>
                     Your browser dose not Support the audio Tag
                 </audio>
             </div>
@@ -309,140 +327,93 @@
                                     </tr>
                                 </table>
                                 <label><strong>Agenda 1</strong></label>
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td><strong>Presenter</strong></td>
-                                        <td>Kim</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Discussion Topic</strong></td>
-                                        <td>what API we should use.</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Conclusion</strong></td>
-                                        <td>Google and IBM works the best.</td>
-                                    </tr>
-                                </table>
-                                <table class="table addel table-bordered" id="addel1">
-                                    <tr>
-                                        <td><strong>Action Item</strong></td>
-                                        <td><strong>Person Responsible</strong></td>
-                                        <td><strong>Deadline</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td>evaluate Google Premium API,</td>
-                                        <td>Kim</td>
-                                        <td>today</td>
-                                    </tr>
-                                    <tr>
-                                        <td>to confirm API and edit the code,</td>
-                                        <td>Steven,</td>
-                                        <td>by the next meeting on the 12th.</td>
-                                    </tr>
-                                    <input type="button" class="float" value="Add" id="addrow1"></table>
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td><strong>Additional Notes</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                    </tr>
-                                </table>
-                                <label><strong>Agenda 2</strong></label>
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td><strong>Presenter</strong></td>
-                                        <td>Steven,</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Discussion Topic</strong></td>
-                                        <td>interface works,</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Conclusion</strong></td>
-                                        <td>Google and IBM works the best.</td>
-                                    </tr>
-                                </table>
-                                <table class="table addel table-bordered" id="addel2">
-                                    <tr>
-                                        <td><strong>Action Item</strong></td>
-                                        <td><strong>Person Responsible</strong></td>
-                                        <td><strong>Deadline</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td>evaluate Google Premium API,</td>
-                                        <td>Steven</td>
-                                        <td>today.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>confirm API and edit the code,</td>
-                                        <td>Steven</td>
-                                        <td>by the next meeting.</td>
-                                    </tr>
-                                    <input type="button" class="float" value="Add" id="addrow2"></table>
-                                <table class="table table-bordered">
-                                    <tr>
-                                        <td><strong>Additional Notes</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td></td>
-                                    </tr>
-                                </table>
 
-                                <br>
-                                <input type="button" name="clone" class="btn btn-file clone"
-                                       value="Add" onclick="toggler('form-group2');">
-                                <div class="form-group2" id="form-group2">
-                                    <div id="addagenda" class="addagenda">
-                                        <br>
-                                        <label><strong>New Agenda</strong></label>
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <td><strong>Presenter</strong></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Discussion Topic</strong></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td><strong>Conclusion</strong></td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                        <table class="table table-bordered addel" id="addel">
-
-                                            <tr>
-                                                <td><strong>Action Items</strong></td>
-                                                <td><strong>Person Responsible</strong></td>
-                                                <td><strong>Deadline</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <input type="button" class="float" value="Add" id="addrow">
-                                        </table>
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <td><strong>Additional Notes</strong></td>
-                                            </tr>
-                                            <tr>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                    <input type="button" name="clone" class="btn btn-file clone"
-                                           value="Add">
-                                    <input type="button" name="remove" class="btn btn-file remove"
-                                           value="Remove">
+                                <div class="form-group2">
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Presenter</strong></td>
+                                            <td>Kim</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Discussion Topic</strong></td>
+                                            <td>what API we should use.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Conclusion</strong></td>
+                                            <td>Google and IBM works the best.</td>
+                                        </tr>
+                                    </table>
+                                    <table class="table addel table-bordered" id="addel1">
+                                        <tr>
+                                            <td><strong>Action Item</strong></td>
+                                            <td><strong>Person Responsible</strong></td>
+                                            <td><strong>Deadline</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>evaluate Google Premium API,</td>
+                                            <td>Kim</td>
+                                            <td>today</td>
+                                        </tr>
+                                        <tr>
+                                            <td>to confirm API and edit the code,</td>
+                                            <td>Steven,</td>
+                                            <td>by the next meeting on the 12th.</td>
+                                        </tr>
+                                        <input type="button" class="float" value="Add" id="addrow1"></table>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Additional Notes</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                 </div>
+                                <div class="form-group2">
+                                    <label><strong>Agenda 2</strong></label>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Presenter</strong></td>
+                                            <td>Steven,</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Discussion Topic</strong></td>
+                                            <td>interface works,</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Conclusion</strong></td>
+                                            <td>Google and IBM works the best.</td>
+                                        </tr>
+                                    </table>
+                                    <table class="table addel table-bordered" id="addel2">
+                                        <tr>
+                                            <td><strong>Action Item</strong></td>
+                                            <td><strong>Person Responsible</strong></td>
+                                            <td><strong>Deadline</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>evaluate Google Premium API,</td>
+                                            <td>Steven</td>
+                                            <td>today.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>confirm API and edit the code,</td>
+                                            <td>Steven</td>
+                                            <td>by the next meeting.</td>
+                                        </tr>
+                                        <input type="button" class="float" value="Add" id="addrow2"></table>
+                                    <table class="table table-bordered">
+                                        <tr>
+                                            <td><strong>Additional Notes</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <input type='button' value='Add' id='addButton' class="btn btn-file clone">
+                                <input type='button' value='Remove' id='removeButton' class="btn btn-file clone">
+
                             </div>
                         </div>
 
@@ -529,7 +500,7 @@
     document.querySelectorAll('.form-outline').forEach((formOutline) => {
         new mdb.Input(formOutline).update();
     });</script>
-<script src="/static/js/query1.js"></script>
+
 <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");
@@ -645,45 +616,78 @@
         link.href = url;
         // Set default file name.
         // Word will append file extension - do not add an extension here.
-        link.download = 'Document';
+        link.download = 'Minute';
         document.body.appendChild(link);
-        if (navigator.msSaveOrOpenBlob) navigator.msSaveOrOpenBlob(blob, 'Document.doc'); // IE10-11
+        if (navigator.msSaveOrOpenBlob) navigator.msSaveOrOpenBlob(blob, 'Minute.doc'); // IE10-11
         else link.click();  // other browsers
         document.body.removeChild(link);
     };
-
-    var regex = /^(.+?)(\d+)$/i;
-    var cloneIndex = $(".form-group2").length;
-
-    function clone() {
-        var elem = $(this).parents(".form-group2");
-        elem.clone()
-            .insertAfter(elem)
-            .attr("id", "form-group2" + cloneIndex)
-            .find("*")
-            .each(function () {
-                var id = this.id || "";
-                var match = id.match(regex) || [];
-                if (match.length === 3) {
-                    this.id = match[1] + (cloneIndex);
-                }
-            })
-            .on('click', 'button.clone', clone)
-            .on('click', 'button.remove', remove);
-        cloneIndex++;
-    }
-
-    function remove() {
-        $(this).parents(".form-group2").remove();
-    }
-
-    $(document).on("click", "input.clone", clone);
-    $(document).on("click", "input.remove", remove);
 
     function toggler(divId) {
         $("#" + divId).toggle();
     }
 
+    $(document).ready(function () {
+
+        $("#addButton").click(function () {
+            $('.WordSection1').append('<div class="form-group2" id="form-group2">\n' +
+                '                                    <div id="addagenda" class="addagenda">\n' +
+                '                                        <br>\n' +
+                '                                        <label><strong>New Agenda</strong></label>\n' +
+                '                                        <table class="table table-bordered">\n' +
+                '                                            <tr>\n' +
+                '                                                <td><strong>Presenter</strong></td>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <tr>\n' +
+                '                                                <td><strong>Discussion Topic</strong></td>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <tr>\n' +
+                '                                                <td><strong>Conclusion</strong></td>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                        </table>\n' +
+                '                                        <table class="table table-bordered addel" id="addel">\n' +
+                '\n' +
+                '                                            <tr>\n' +
+                '                                                <td><strong>Action Items</strong></td>\n' +
+                '                                                <td><strong>Person Responsible</strong></td>\n' +
+                '                                                <td><strong>Deadline</strong></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <tr>\n' +
+                '                                                <td></td>\n' +
+                '                                                <td></td>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <tr>\n' +
+                '                                                <td></td>\n' +
+                '                                                <td></td>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <input type="button" class="float" value="Add" id="addrow">\n' +
+                '                                        </table>\n' +
+                '                                        <table class="table table-bordered">\n' +
+                '                                            <tr>\n' +
+                '                                                <td><strong>Additional Notes</strong></td>\n' +
+                '                                            </tr>\n' +
+                '                                            <tr>\n' +
+                '                                                <td></td>\n' +
+                '                                            </tr>\n' +
+                '                                        </table>\n' +
+                '                                    </div>\n' +
+                '                                </div>');
+        });
+
+        $("#removeButton").click(function () {
+            if ($('.WordSection1 .form-group2').length == 0) {
+                alert("No more textbox to remove");
+                return false;
+            }
+
+            $(".WordSection1 .form-group2:last").remove();
+        });
+    });
 </script>
 <script>   $(document).ready(function () {
     var tbody = $("#addel1").children("tbody");
@@ -699,6 +703,11 @@
         table.append("<tr><td></td><td></td><td></td></tr>");
     })
 });</script>
+<script>
+  $(window).load(function() {
+    $('#loading').hide();
+  });
+</script>
 </body>
 </html>
 <!--document.forms["txt"].submit();-->
