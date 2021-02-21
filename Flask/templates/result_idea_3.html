@@ -1,6 +1,7 @@
 <input type='button' value='Add' id='addButton' class="btn btn-file clone">
                                 <input type='button' value='Remove' id='removeButton' class="btn btn-file clone">
 
+
                             </div>
                         </div>
 
@@ -220,48 +221,28 @@
             $('.WordSection1').append('<div class="form-group2" id="form-group2">\n' +
                 '                                    <div id="addagenda" class="addagenda">\n' +
                 '                                        <br>\n' +
-                '                                        <label><strong>New Agenda</strong></label>\n' +
                 '                                        <table class="table table-bordered">\n' +
                 '                                            <tr>\n' +
-                '                                                <td><strong>Presenter</strong></td>\n' +
-                '                                                <td></td>\n' +
-                '                                            </tr>\n' +
-                '                                            <tr>\n' +
-                '                                                <td><strong>Discussion Topic</strong></td>\n' +
-                '                                                <td></td>\n' +
-                '                                            </tr>\n' +
-                '                                            <tr>\n' +
-                '                                                <td><strong>Conclusion</strong></td>\n' +
+                '                                                <td><strong>New Idea</strong></td>\n' +
                 '                                                <td></td>\n' +
                 '                                            </tr>\n' +
                 '                                        </table>\n' +
-                '                                        <table class="table table-bordered addel" id="addel">\n' +
-                '\n' +
+                '                                        <table class="table addel table-bordered" id="addel1">\n' +
                 '                                            <tr>\n' +
-                '                                                <td><strong>Action Items</strong></td>\n' +
-                '                                                <td><strong>Person Responsible</strong></td>\n' +
-                '                                                <td><strong>Deadline</strong></td>\n' +
+                '                                                <td><strong>Details</strong></td>\n' +
                 '                                            </tr>\n' +
                 '                                            <tr>\n' +
-                '                                                <td></td>\n' +
-                '                                                <td></td>\n' +
-                '                                                <td></td>\n' +
+                '                                                <td>&#9642;</td>\n' +
                 '                                            </tr>\n' +
                 '                                            <tr>\n' +
-                '                                                <td></td>\n' +
-                '                                                <td></td>\n' +
-                '                                                <td></td>\n' +
-                '                                            </tr>\n' +
-                '                                            <input type="button" class="float" value="Add" id="addrow">\n' +
-                '                                        </table>\n' +
-                '                                        <table class="table table-bordered">\n' +
-                '                                            <tr>\n' +
-                '                                                <td><strong>Additional Notes</strong></td>\n' +
+                '                                                <td><strong>Comments</strong></td>\n' +
                 '                                            </tr>\n' +
                 '                                            <tr>\n' +
-                '                                                <td></td>\n' +
+                '                                                <td>&#9642;\n' +
+                '                                                </td>\n' +
                 '                                            </tr>\n' +
                 '                                        </table>\n' +
+                '                                        <br>\n' +
                 '                                    </div>\n' +
                 '                                </div>');
         });
@@ -275,11 +256,13 @@
             $(".WordSection1 .form-group2:last").remove();
         });
     });
+
 </script>
 <script>
-    $(window).load(function () {
-        $('#loading').hide();
-    });
+  $(window).load(function() {
+    $('#loading').hide();
+  });
 </script>
-
+</body>
+</html>
 <!--document.forms["txt"].submit();-->

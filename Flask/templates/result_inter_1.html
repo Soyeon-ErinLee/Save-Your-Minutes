@@ -3,19 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="../static/js/jquery-3.4.1.min.js"></script> 
-    <script> 
-    $(function(){
-      $("#minute").load("output.html"); 
-    });
-    </script> 
     <link rel="shortcut icon"
           href="https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/Flask/templates/logo2.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-    <link href="../static/css/txtstyle.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Rouge+Script&display=swap"
           rel="stylesheet">
     <title>Save Your Minutes</title>
@@ -70,6 +63,26 @@
             height: 700px;
         }
 
+        #loading {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            display: block;
+            opacity: 0.7;
+            background-color: #fff;
+            z-index: 99;
+            text-align: center;
+        }
+
+        #loading-image {
+            position: absolute;
+            top: 350px;
+            left: 700px;
+            z-index: 100;
+        }
+
         .askai {
             color: darkblue;
         }
@@ -98,27 +111,6 @@
         #iframe {
             display: none;
         }
-
-        #loading {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            position: fixed;
-            display: block;
-            opacity: 0.7;
-            background-color: #fff;
-            z-index: 99;
-            text-align: center;
-        }
-
-        #loading-image {
-            position: absolute;
-            top: 350px;
-            left: 700px;
-            z-index: 100;
-        }
-
 
         #myBtn {
             display: none; /* Hidden by default */
@@ -270,4 +262,3 @@
                             <iframe id="iframe"></iframe>
                             <div type="text" class="form-control anyClass alas makebig is-disabled"
                                  id="edit" disabled>
-                                
