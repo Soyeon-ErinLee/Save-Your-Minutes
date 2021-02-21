@@ -22,8 +22,6 @@ Our intelligent natural language processing tools understand the context of your
 #### :computer: SaaS
 AI meeting solution at your service, anytime and anywhere. Access our powerful technology on the website. We have deployed our flask application on AWS.
 
-![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/compadv.png)
-
 ## How to use
 ### Requirements
 :point_down: Simply click on this website!
@@ -31,15 +29,17 @@ AI meeting solution at your service, anytime and anywhere. Access our powerful t
 http://13.209.99.174:5000/
 
 ### Tutorial 
+:point_down: Click the image!
+
 [![Watch the video](https://www.gstatic.com/images/branding/product/2x/youtube_kids_96dp.png)](https://youtu.be/AqIHGU59u1c)
 
 
 ### More About Our Solution
-![image2](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)
-![image3](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/solution.png)
+![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/solution.png)
+![image2](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/compadv.png)
+![image3](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/execsum.png)
 
 
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. *May you be FREE!*   
 ![image4](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/aboutus.png)
-![image5](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/execsum.png)
