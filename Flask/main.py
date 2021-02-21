@@ -51,14 +51,31 @@ def upload():
             return render_template('homepage.html', scroll = 'purpose')
     return render_template('homepage.html')
 
-@app.route("/result", methods = ['GET', 'POST'])
+@app.route("/result", methods=['GET', 'POST'])
 def result():
     path, file_type = transcribe()
-    if request.method == 'POST':
-        f = request.files.get('file')
-        f.save(os.path.join(upload_dir, f.filename))
+    mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    mtl.get_table()
+    with open(os.path.join(basedir, "templates/result.html"), "r", encoding="UTF-8") as file:
+        result_1 = file.read()
+    with open(os.path.join(basedir, "templates/result_0_1.html"), "r", encoding="UTF-8") as file:
+        result_2 = file.read()
+    with open(os.path.join(basedir, "templates/result_0.html"), "r", encoding="UTF-8") as file:
+        result_3 = file.read()
+    with open(os.path.join(upload_dir, "Output.txt"), 'r', encoding="UTF-8") as file:
+        txt = file.read()
+    with open(os.path.join(upload_dir, "javascript.txt"), 'r', encoding="UTF-8") as file:
+        txt2 = file.read()
+    result_1 += front
+    result_1 += result_2
+    result_1 += txt
+    result_1 += result_3
+    result_1 += txt2
+    result_1 += ("</body></html>")
+    with open(os.path.join(basedir, "templates/final_result.html"), "w", encoding="UTF-8") as file:
+        file.write(result_1)
     return render_template(
-        'result.html', path = path, file_type = file_type
+        'final_result.html', path = path, file_type = file_type
     )
 
 @app.route("/result_interview", methods=['GET', 'POST'])
