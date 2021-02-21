@@ -83,17 +83,14 @@ def result():
 @app.route("/result_interview", methods=['GET', 'POST'])
 def result1():
     path, file_type = transcribe()
-    print("pass1")
-    mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
-    print("pass2")
-    mtl.get_table()
+
     with open(os.path.join(basedir, "templates/result.html"), "r", encoding="UTF-8") as file:
         result_1 = file.read()
     with open(os.path.join(basedir, "templates/result_0_1.html"), "r", encoding="UTF-8") as file:
         result_2 = file.read()
     with open(os.path.join(basedir, "templates/result_0.html"), "r", encoding="UTF-8") as file:
         result_3 = file.read()
-    with open(os.path.join(upload_dir, "Output.txt"), 'r', encoding="UTF-8") as file:
+    with open(os.path.join(upload_dir, "interview_output.txt"), 'r', encoding="UTF-8") as file:
         txt = file.read()
     result_1 += front
     result_1 += result_2
@@ -109,7 +106,7 @@ def result1():
 def result2():
     path, file_type = transcribe()
     print("pass1")
-    mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Idea")
     print("pass2")
     mtl.get_table()
     with open(os.path.join(basedir, "templates/result.html2"), "r", encoding="UTF-8") as file:

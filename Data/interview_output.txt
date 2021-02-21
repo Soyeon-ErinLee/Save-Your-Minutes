@@ -1,0 +1,91 @@
+﻿<table class="table table-bordered">
+<tr>
+<td><strong>Topic</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Interviewer</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Interviewee</strong></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td></td>
+</tr>
+</table>
+
+<label><strong>Interview Summary</strong></label>
+
+<div class="form-group2">
+<table class="table table-bordered">
+<tr>
+<td><strong>Subject 1</strong></td>
+<td></td>
+</tr>
+</table>
+<table class="table addel table-bordered" id="addel1">
+<tr>
+<td><strong>Details</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td><strong>Comments</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+
+<div class="form-group2">
+<table class="table table-bordered">
+<tr>
+<td><strong>Subject 2</strong></td>
+<td></td>
+</tr>
+</table>
+<table class="table addel table-bordered" id="addel1">
+<tr>
+<td><strong>Details</strong></td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td><strong>Comments</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
+
+<div class="form-group2">
+<table class="table table-bordered">
+<tr>
+<td><strong>Subject 3</strong></td>
+<td></td>
+</tr>
+</table>
+<table class="table addel table-bordered" id="addel1">
+<tr>
+<td><strong>Details</strong></td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td><strong>Comments</strong></td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</div>
