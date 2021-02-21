@@ -25,11 +25,11 @@ class TRANSCRIBER:
         return s3_config
 
     def _init_transcribe(self):
-        self.transcribe = boto3.client('transcribe')
+        self._transcribe = boto3.client('transcribe')
 
-    def upload(self, stream, filename):
+    def upload(self, path, filename):
         self.filename = filename
-        self.s3.Bucket(self.bucket_name).upload_fileobj(stream, filename)
+        self.s3.Bucket(self.bucket_name).upload_file(path, filename)
 
     def transcribe(self, num_speakers):
         job_name = self.filename
@@ -42,7 +42,7 @@ class TRANSCRIBER:
             + '/'
             + self.filename
         )
-        self.transcribe.start_transcription_job(
+        self._transcribe.start_transcription_job(
             TranscriptionJobName = job_name,
             Media = {'MediaFileUri': job_uri},
             MediaFormat = format,
@@ -58,7 +58,7 @@ class TRANSCRIBER:
     def _wait_for_transcription_result(self, job_name):
         status = None
         while True:
-            status = self.transcribe.get_transcription_job(TranscriptionJobName = job_name)
+            status = self._transcribe.get_transcription_job(TranscriptionJobName = job_name)
             if status['TranscriptionJob']['TranscriptionJobStatus'] in ['COMPLETED', 'FAILED']:
                 break
             time.sleep(5)
