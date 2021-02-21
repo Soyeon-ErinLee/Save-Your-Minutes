@@ -121,7 +121,7 @@ class SttTransformer(object):
 
         df = self.parsing()
         html_string = ''
-        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1]+1))
+        df['speaker'] = df['speaker'].apply(lambda x: int(x.split('_')[1])+1)
 
         for i in range(len(df)):
             speaker_temp = 'Speaker ' + str(df.iloc[i, 0])
