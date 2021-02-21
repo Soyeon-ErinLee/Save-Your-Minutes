@@ -31,7 +31,7 @@ AI meeting solution at your service, anytime and anywhere. Access our powerful t
 gif
 
 ### Tutorial 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)](https://youtu.be/AqIHGU59u1c)
 
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. *May you be FREE!*   
