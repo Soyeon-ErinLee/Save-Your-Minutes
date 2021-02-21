@@ -20,18 +20,18 @@ Thanks to Amazon Transcribe, we can take advantage of the most advanced speech-t
 Our intelligent natural language processing tools understand the context of your dialogue, ensuring high accuracy of the transcripts and minutes we generate.
 
 #### :computer: SaaS
-AI meeting solution at your service, anytime and anywhere. Access our powerful technology on the website.
+AI meeting solution at your service, anytime and anywhere. Access our powerful technology on the website. We have deployed our flask application on AWS.
 
 ## How to use
 ### Requirements
-To be updated
+:point_down: Simply click on this website!
 
 ### Basic usage
-To be updated
 ![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)
+gif
 
 ### Tutorial 
-To be updated
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. *May you be FREE!*   
