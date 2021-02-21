@@ -13,6 +13,7 @@ import json
 warnings.filterwarnings("ignore")
 basedir = os.path.abspath(os.path.dirname(__file__))
 upload_dir = os.path.join(basedir, 'static/uploads')
+upload_dir_2 = os.path.join(os.path.dirname(basedir), 'Data')
 output_dir = os.path.join(basedir, 'output')
 sys.path.append(os.path.join(os.path.dirname(basedir), 'Python_Modules'))
 from _transcriber import TRANSCRIBER
@@ -64,9 +65,9 @@ def result():
         result_2 = file.read()
     with open(os.path.join(basedir, "templates/result_0.html"), "r", encoding="UTF-8") as file:
         result_3 = file.read()
-    with open(os.path.join(upload_dir, "Output.txt"), 'r', encoding="UTF-8") as file:
+    with open(os.path.join(upload_dir_2, "Output.txt"), 'r', encoding="UTF-8") as file:
         txt = file.read()
-    with open(os.path.join(upload_dir, "javascript.txt"), 'r', encoding="UTF-8") as file:
+    with open(os.path.join(upload_dir_2, "javascript.txt"), 'r', encoding="UTF-8") as file:
         txt2 = file.read()
     result_1 += front
     result_1 += result_2
@@ -90,7 +91,7 @@ def result1():
         result_2 = file.read()
     with open(os.path.join(basedir, "templates/result_0.html"), "r", encoding="UTF-8") as file:
         result_3 = file.read()
-    with open(os.path.join(upload_dir, "interview_output.txt"), 'r', encoding="UTF-8") as file:
+    with open(os.path.join(upload_dir_2, "interview_output.txt"), 'r', encoding="UTF-8") as file:
         txt = file.read()
     result_1 += front
     result_1 += result_2
@@ -115,7 +116,7 @@ def result2():
         result_2 = file.read()
     with open(os.path.join(basedir, "templates/result_1.html"), "r", encoding="UTF-8") as file:
         result_3 = file.read()
-    with open(os.path.join(upload_dir, "Output.txt"), 'r', encoding="UTF-8") as file:
+    with open(os.path.join(upload_dir_2, "Output.txt"), 'r', encoding="UTF-8") as file:
         txt = file.read()
     result_1 += front
     result_1 += result_2

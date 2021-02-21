@@ -5,3 +5,4 @@ config.py
 __pycache__/
 result.json
 test*.py
+final_result.html
