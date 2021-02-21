@@ -15,9 +15,6 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 # Need to install
 # pip install transformers==4.0.1
 # pip install word2number
-# 이부분은 자유롭게 바꾸셔도 됩니다 Python Modules 폴더 내 make_tables.py만 불러오면 돼요
-os.chdir(os.path.join(basedir, 'Python_Modules'))
-import make_tables
 
 basedir = os.path.abspath(os.path.dirname(__file__))
 upload_dir = os.path.join(basedir, 'static/uploads')
@@ -37,29 +34,12 @@ app.config['DROPZONE_ALLOWED_FILE_CUSTOM'] = True
 app.config['DROPZONE_ALLOWED_FILE_TYPE'] = 'audio/*, .mp3, .wav, .m4a'
 
 transcriber = TRANSCRIBER()
+# 이부분은 자유롭게 바꾸셔도 됩니다 Python Modules 폴더 내 make_tables.py만 불러오면 돼요
+os.chdir(os.path.join(basedir, '../Python_Modules'))
+import make_tables
 
-query_faq = {'table_top': {
-    'Participants': 'who are the attendees at the meeting?',
-    'Topic': 'what was the main topic of the meeting?',
-    'num_agendas': 'How many ideas discussed?',
-},
-    'table_main1': {
-        'Idea 1': 'what was the first idea?'
-    },
-    'table_main1_1': {
-        'quest1': 'what can be advantage of the first idea?',
-        'quest2': 'what is the problem of the first idea?',
-        'quest3': 'what can be the possible solution for the first  idea?'
-    },
-    'table_main2': {
-        'Idea 2': 'what was the second idea?'
-    },
-    'table_main2_1': {
-        'quest1': 'what can be advantage of the second idea?',
-        'quest2': 'what is the problem of the second idea?'
-    }
-}
-
+with open(os.path.join(upload_dir, 'faq_query.json')) as f:
+    query_faq=json.load(f)
 
 @app.route("/", methods=['GET', 'POST'])
 def upload():
@@ -111,19 +91,30 @@ def result():
 @app.route("/result_interview", methods=['GET', 'POST'])
 def result1():
     path, file_type = insert_audio()
-    if request.method == 'POST':
-        f = request.files.get('file')
-        f.save(os.path.join(upload_dir, f.filename))
-    return render_template(
-        'result1.html', path=path, file_type=file_type
-    )
+
+    with open(os.path.join(basedir, "templates/result.html2"), "r", encoding="UTF-8") as file:
+        result_1 = file.read()
+    with open(os.path.join(basedir, "templates/result_1_1.html"), "r", encoding="UTF-8") as file:
+        result_2 = file.read()
+    with open(os.path.join(basedir, "templates/result_1.html"), "r", encoding="UTF-8") as file:
+        result_3 = file.read()
+    with open(os.path.join(upload_dir, "interview_output.txt"), 'r', encoding="UTF-8") as file:
+        txt = file.read()
+    result_1 += front
+    result_1 += result_2
+    result_1 += txt
+    result_1 += result_3
+    with open(os.path.join(basedir, "templates/final_result.html"), "w", encoding="UTF-8") as file:
+        file.write(result_1)
+    return render_template('final_result.html', path=path, file_type=file_type)
+
 
 
 
 @app.route("/result_idea", methods=['GET', 'POST'])
 def result2():
     path, file_type = insert_audio()
-    mtl = make_tables.MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    mtl = make_tables.MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Idea")
     mtl.get_table()
     with open(os.path.join(basedir, "templates/result.html2"), "r", encoding="UTF-8") as file:
         result_1 = file.read()
