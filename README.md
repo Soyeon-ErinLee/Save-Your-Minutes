@@ -26,12 +26,15 @@ AI meeting solution at your service, anytime and anywhere. Access our powerful t
 ### Requirements
 :point_down: Simply click on this website!
 
-### Basic usage
-![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)
-gif
+http://13.209.99.174:5000/
 
 ### Tutorial 
-[![Watch the video](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)](https://youtu.be/AqIHGU59u1c)
+[![Watch the video](https://www.gstatic.com/images/branding/product/2x/youtube_kids_96dp.png)](https://youtu.be/AqIHGU59u1c)
+
+
+### More About Our Solution
+![image1](https://raw.githubusercontent.com/Soyeon-ErinLee/Dobby-AI/main/homepage.png)
+
 
 ## About us, *Dobby-AI*
 *Dobby-AI* is a project team for 2021 KPMG Ideation Challenge. *May you be FREE!*   
