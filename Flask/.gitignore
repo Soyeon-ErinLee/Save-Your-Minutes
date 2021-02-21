@@ -2,4 +2,5 @@ uploads/
 output/
 static/uploads/
 config.py
+__pycache__/
 test*.py

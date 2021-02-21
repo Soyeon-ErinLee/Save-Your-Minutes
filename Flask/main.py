@@ -7,6 +7,8 @@ import os
 import sys
 import time
 import warnings
+import json
+
 
 warnings.filterwarnings("ignore")
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -31,17 +33,14 @@ app.config['DROPZONE_ALLOWED_FILE_TYPE'] = 'audio/*, .mp3, .wav, .m4a'
 transcriber = TRANSCRIBER()
 front = None
 model = None
-with open(os.path.join(upload_dir, 'faq_query.json')) as f:
-    query_faq=json.load(f)
+with open(os.path.join(os.path.dirname(basedir), 'Data/faq_query.json')) as f:
+    query_faq = json.load(f)
 
 @app.route("/", methods = ['GET', 'POST'])
 def upload():
-    if 'audio_file_name' not in session:
-        session['audio_file_name'] = '.'
     if request.method == 'POST':
-        audio_file_name = session['audio_file_name']
-        if audio_file_name == '.':
-            f = request.files.get('file')
+        f = request.files.get('file')
+        if f is not None:
             filename = secure_filename(f.filename)
             file_path = os.path.join(upload_dir, filename)
             f.save(file_path)
@@ -49,6 +48,7 @@ def upload():
             transcriber.upload(file_path, filename)
         else:
             session['num_speakers'] = request.form['speakers']
+            return render_template('homepage.html', scroll = 'purpose')
     return render_template('homepage.html')
 
 @app.route("/result", methods = ['GET', 'POST'])
@@ -117,7 +117,7 @@ def transcribe():
     global front
     global model
     audio_file_name = session['audio_file_name']
-    num_speakers = int(session['num_speakers'])
+    num_speakers = session['num_speakers']
     session.clear()
     path = 'uploads/' + audio_file_name
     file_type = 'audio/' + audio_file_name.rsplit('.')[-1]
