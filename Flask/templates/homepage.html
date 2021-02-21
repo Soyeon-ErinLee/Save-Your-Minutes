@@ -424,10 +424,10 @@
             </body>
             <br>
             <h5 class="h5 mb-3 text-center">How many people are in this meeting?</h5>
-            <div class="form-row justify-content-center inputform">
-                <label class="sr-only">Name</label>
-                <input type="text" class="text-center form-control w-25" placeholder="Enter up to 10" name="speakers">
-            </div>
+            <form method="POST">
+                <input name="speakers" placeholder="Enter up to 10">
+                <input type="submit" value="submit">
+            </form>
             <br>
             <h5 class="h5 mb-3 text-center">What is the purpose of the meeting?</h5>
             <div class="type-2 text-center">
