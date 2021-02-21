@@ -21,6 +21,7 @@ upload_dir = os.path.join(basedir, 'static/uploads')
 output_dir = os.path.join(basedir, 'output')
 sys.path.append(os.path.join(os.path.dirname(basedir), 'Python_Modules'))
 from _transcriber import TRANSCRIBER
+from _file_transformer import SttTransformer
 
 app = Flask(__name__)
 app.debug = True
