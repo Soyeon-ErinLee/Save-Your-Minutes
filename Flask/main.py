@@ -117,7 +117,7 @@ def transcribe():
     global front
     global model
     audio_file_name = session['audio_file_name']
-    num_speakers = session['num_speakers']
+    num_speakers = int(session['num_speakers'])
     session.clear()
     path = 'uploads/' + audio_file_name
     file_type = 'audio/' + audio_file_name.rsplit('.')[-1]
