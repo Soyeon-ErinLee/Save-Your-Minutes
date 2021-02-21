@@ -3,4 +3,5 @@ output/
 static/uploads/
 config.py
 __pycache__/
+result.json
 test*.py

@@ -64,7 +64,9 @@ def result():
 @app.route("/result_interview", methods=['GET', 'POST'])
 def result1():
     path, file_type = transcribe()
+    print("pass")
     mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    print("pass2")
     mtl.get_table()
     with open(os.path.join(basedir, "templates/result.html"), "r", encoding="UTF-8") as file:
         result_1 = file.read()
@@ -80,11 +82,8 @@ def result1():
     result_1 += result_3
     with open(os.path.join(basedir, "templates/final_result.html"), "w", encoding="UTF-8") as file:
         file.write(result_1)
-    if request.method == 'POST':
-        f = request.files.get('file')
-        f.save(os.path.join(upload_dir, f.filename))
     return render_template(
-        'result1.html', path = path, file_type = file_type
+        'final_result.html', path = path, file_type = file_type
     )
 
 @app.route("/result_idea", methods=['GET', 'POST'])
@@ -106,11 +105,8 @@ def result2():
     result_1 += result_3
     with open(os.path.join(basedir, "templates/final_result.html"), "w", encoding="UTF-8") as file:
         file.write(result_1)
-    if request.method == 'POST':
-        f = request.files.get('file')
-        f.save(os.path.join(upload_dir, f.filename))
     return render_template(
-        'result2.html', path = path, file_type = file_type
+        'final_result.html', path = path, file_type = file_type
     )
 
 def transcribe():
