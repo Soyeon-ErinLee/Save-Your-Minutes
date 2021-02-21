@@ -31,27 +31,8 @@ app.config['DROPZONE_ALLOWED_FILE_TYPE'] = 'audio/*, .mp3, .wav, .m4a'
 transcriber = TRANSCRIBER()
 front = None
 model = None
-query_faq = {'table_top': {
-    'Participants': 'who are the attendees at the meeting?',
-    'Topic': 'what was the main topic of the meeting?',
-    'num_agendas': 'How many ideas discussed?',
-},
-    'table_main1': {
-        'Idea 1': 'what was the first idea?'
-    },
-    'table_main1_1': {
-        'quest1': 'what can be advantage of the first idea?',
-        'quest2': 'what is the problem of the first idea?',
-        'quest3': 'what can be the possible solution for the first  idea?'
-    },
-    'table_main2': {
-        'Idea 2': 'what was the second idea?'
-    },
-    'table_main2_1': {
-        'quest1': 'what can be advantage of the second idea?',
-        'quest2': 'what is the problem of the second idea?'
-    }
-}
+with open(os.path.join(upload_dir, 'faq_query.json')) as f:
+    query_faq=json.load(f)
 
 @app.route("/", methods = ['GET', 'POST'])
 def upload():
