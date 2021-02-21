@@ -133,18 +133,17 @@ def result2():
     )
 
 def transcribe():
+    global front
+    global model
     audio_file_name = session['audio_file_name']
     num_speakers = int(session['num_speakers'])
     session.pop('audio_file_name', None)
     path = 'uploads/' + audio_file_name
     file_type = 'audio/' + audio_file_name.rsplit('.')[-1]
     data = transcriber.transcribe(num_speakers)
-    global front
-    global model
-    time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
-    front = SttTransformer(data).html_transfomer()  # front value (to Soyeon)
-    model = SttTransformer(data).model_transfomer(time)  # input value for model (to Jihyun)
-    print(data)
+    current_time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
+    front = SttTransformer(data).html_transfomer()  
+    model = SttTransformer(data).model_transfomer(current_time)
     return path, file_type
 
 
