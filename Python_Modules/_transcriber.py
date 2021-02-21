@@ -65,4 +65,4 @@ class TRANSCRIBER:
         result_uri = status['TranscriptionJob']['Transcript']['TranscriptFileUri']
         result = request.urlopen(result_uri)
         result_in_json = result.read().decode('utf8')
-        return result_in_json
+        return json.loads(result_in_json)

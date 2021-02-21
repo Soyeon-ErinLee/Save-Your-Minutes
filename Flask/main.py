@@ -137,13 +137,13 @@ def transcribe():
     global model
     audio_file_name = session['audio_file_name']
     num_speakers = int(session['num_speakers'])
-    session.pop('audio_file_name', None)
+    session.clear()
     path = 'uploads/' + audio_file_name
     file_type = 'audio/' + audio_file_name.rsplit('.')[-1]
     data = transcriber.transcribe(num_speakers)
     current_time = time.strftime('%Y-%m-%d %H:%M', time.localtime(time.time()))
-    front = SttTransformer(data).html_transfomer()  
-    model = SttTransformer(data).model_transfomer(current_time)
+    front = SttTransformer(data).html_transformer()  
+    model = SttTransformer(data).model_transformer(current_time)
     return path, file_type
 
 
