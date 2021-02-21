@@ -81,7 +81,7 @@ class MAKE_TABLES:
 				else:     
 					html_string+='</tr>'
 
-			html_string+='<input types="button" class="float" value="Add" id="addrow'+str(n_agenda)+'"></table>'
+			html_string+='<input type="button" class="float" value="Add" id="addrow'+str(n_agenda)+'"></table>'
 
 		else:
 			html_string += '<td>'
