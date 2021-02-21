@@ -54,7 +54,9 @@ def upload():
 @app.route("/result", methods=['GET', 'POST'])
 def result():
     path, file_type = transcribe()
+    print("pass1")
     mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    print("pass2")
     mtl.get_table()
     with open(os.path.join(basedir, "templates/result.html"), "r", encoding="UTF-8") as file:
         result_1 = file.read()
@@ -81,7 +83,7 @@ def result():
 @app.route("/result_interview", methods=['GET', 'POST'])
 def result1():
     path, file_type = transcribe()
-    print("pass")
+    print("pass1")
     mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
     print("pass2")
     mtl.get_table()
@@ -106,7 +108,9 @@ def result1():
 @app.route("/result_idea", methods=['GET', 'POST'])
 def result2():
     path, file_type = transcribe()
+    print("pass1")
     mtl = MAKE_TABLES(query_faq['query_dict_agenda'], model, types="Agenda")
+    print("pass2")
     mtl.get_table()
     with open(os.path.join(basedir, "templates/result.html2"), "r", encoding="UTF-8") as file:
         result_1 = file.read()
