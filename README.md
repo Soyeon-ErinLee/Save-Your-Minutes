@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **`"Save your minutes, we'll write your minutes."`**   
-*For 2021 KPMG Ideation Challenge*  
+
+**2021 KPMG Ideation Challenge Finalist**  
 
 ## Meeting Recordings into Professional Business Minutes
 ***Save Your Minutes*** provides the best AI solution to convert your meeting recordings into professional business minutes and transcripts. Once you upload the audio file, you can get the professional minute and speaker-diarized transcript immediately. With the ***Save Your Minutes***-made draft, you can easily add, rearrange and modify your minutes. And then? Everything is done!
